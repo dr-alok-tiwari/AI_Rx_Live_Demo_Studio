@@ -1,0 +1,1682 @@
+[
+  {
+    "id": "q-01-01",
+    "category": "Privacy",
+    "question": "During a outpatient clinic, a participant proposes uploading a discharge summary containing name and phone number to a public AI account. What is the safest first action?",
+    "options": [
+      "Upload it and delete the chat later",
+      "Remove or avoid the identifiable data and use an approved workflow",
+      "Ask the AI not to remember it",
+      "Convert it to a PDF"
+    ],
+    "answer": "Remove or avoid the identifiable data and use an approved workflow",
+    "explanation": "A prompt cannot substitute for data minimisation, approval, and an appropriate processing environment.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-01-02",
+    "category": "Privacy",
+    "question": "During a CME workshop, a participant proposes uploading a discharge summary containing name and phone number to a public AI account. What is the safest first action?",
+    "options": [
+      "Upload it and delete the chat later",
+      "Remove or avoid the identifiable data and use an approved workflow",
+      "Ask the AI not to remember it",
+      "Convert it to a PDF"
+    ],
+    "answer": "Remove or avoid the identifiable data and use an approved workflow",
+    "explanation": "A prompt cannot substitute for data minimisation, approval, and an appropriate processing environment.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-01-03",
+    "category": "Privacy",
+    "question": "During a research meeting, a participant proposes uploading a discharge summary containing name and phone number to a public AI account. What is the safest first action?",
+    "options": [
+      "Upload it and delete the chat later",
+      "Remove or avoid the identifiable data and use an approved workflow",
+      "Ask the AI not to remember it",
+      "Convert it to a PDF"
+    ],
+    "answer": "Remove or avoid the identifiable data and use an approved workflow",
+    "explanation": "A prompt cannot substitute for data minimisation, approval, and an appropriate processing environment.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-01-04",
+    "category": "Privacy",
+    "question": "During a hospital department, a participant proposes uploading a discharge summary containing name and phone number to a public AI account. What is the safest first action?",
+    "options": [
+      "Upload it and delete the chat later",
+      "Remove or avoid the identifiable data and use an approved workflow",
+      "Ask the AI not to remember it",
+      "Convert it to a PDF"
+    ],
+    "answer": "Remove or avoid the identifiable data and use an approved workflow",
+    "explanation": "A prompt cannot substitute for data minimisation, approval, and an appropriate processing environment.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-01-05",
+    "category": "Privacy",
+    "question": "During a teleconsultation planning, a participant proposes uploading a discharge summary containing name and phone number to a public AI account. What is the safest first action?",
+    "options": [
+      "Upload it and delete the chat later",
+      "Remove or avoid the identifiable data and use an approved workflow",
+      "Ask the AI not to remember it",
+      "Convert it to a PDF"
+    ],
+    "answer": "Remove or avoid the identifiable data and use an approved workflow",
+    "explanation": "A prompt cannot substitute for data minimisation, approval, and an appropriate processing environment.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-01-06",
+    "category": "Privacy",
+    "question": "During a journal club, a participant proposes uploading a discharge summary containing name and phone number to a public AI account. What is the safest first action?",
+    "options": [
+      "Upload it and delete the chat later",
+      "Remove or avoid the identifiable data and use an approved workflow",
+      "Ask the AI not to remember it",
+      "Convert it to a PDF"
+    ],
+    "answer": "Remove or avoid the identifiable data and use an approved workflow",
+    "explanation": "A prompt cannot substitute for data minimisation, approval, and an appropriate processing environment.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-02-01",
+    "category": "Hallucination",
+    "question": "During a outpatient clinic, an AI-generated note contains a normal chest examination that was never stated. How should it be handled?",
+    "options": [
+      "Keep it because normal findings are common",
+      "Delete or correct it and compare the full note with the source",
+      "Mark it as AI-generated and keep it",
+      "Send it directly to the EHR"
+    ],
+    "answer": "Delete or correct it and compare the full note with the source",
+    "explanation": "An unsupported examination is a fabricated clinical fact and signals the need for complete source comparison.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-02-02",
+    "category": "Hallucination",
+    "question": "During a CME workshop, an AI-generated note contains a normal chest examination that was never stated. How should it be handled?",
+    "options": [
+      "Keep it because normal findings are common",
+      "Delete or correct it and compare the full note with the source",
+      "Mark it as AI-generated and keep it",
+      "Send it directly to the EHR"
+    ],
+    "answer": "Delete or correct it and compare the full note with the source",
+    "explanation": "An unsupported examination is a fabricated clinical fact and signals the need for complete source comparison.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-02-03",
+    "category": "Hallucination",
+    "question": "During a research meeting, an AI-generated note contains a normal chest examination that was never stated. How should it be handled?",
+    "options": [
+      "Keep it because normal findings are common",
+      "Delete or correct it and compare the full note with the source",
+      "Mark it as AI-generated and keep it",
+      "Send it directly to the EHR"
+    ],
+    "answer": "Delete or correct it and compare the full note with the source",
+    "explanation": "An unsupported examination is a fabricated clinical fact and signals the need for complete source comparison.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-02-04",
+    "category": "Hallucination",
+    "question": "During a hospital department, an AI-generated note contains a normal chest examination that was never stated. How should it be handled?",
+    "options": [
+      "Keep it because normal findings are common",
+      "Delete or correct it and compare the full note with the source",
+      "Mark it as AI-generated and keep it",
+      "Send it directly to the EHR"
+    ],
+    "answer": "Delete or correct it and compare the full note with the source",
+    "explanation": "An unsupported examination is a fabricated clinical fact and signals the need for complete source comparison.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-02-05",
+    "category": "Hallucination",
+    "question": "During a teleconsultation planning, an AI-generated note contains a normal chest examination that was never stated. How should it be handled?",
+    "options": [
+      "Keep it because normal findings are common",
+      "Delete or correct it and compare the full note with the source",
+      "Mark it as AI-generated and keep it",
+      "Send it directly to the EHR"
+    ],
+    "answer": "Delete or correct it and compare the full note with the source",
+    "explanation": "An unsupported examination is a fabricated clinical fact and signals the need for complete source comparison.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-02-06",
+    "category": "Hallucination",
+    "question": "During a journal club, an AI-generated note contains a normal chest examination that was never stated. How should it be handled?",
+    "options": [
+      "Keep it because normal findings are common",
+      "Delete or correct it and compare the full note with the source",
+      "Mark it as AI-generated and keep it",
+      "Send it directly to the EHR"
+    ],
+    "answer": "Delete or correct it and compare the full note with the source",
+    "explanation": "An unsupported examination is a fabricated clinical fact and signals the need for complete source comparison.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-03-01",
+    "category": "Evidence",
+    "question": "During a outpatient clinic, a source-linked answer cites a recent trial. What is the next best step?",
+    "options": [
+      "Accept the answer because it has a citation",
+      "Open the trial and verify population, methods, outcome, and claim",
+      "Prefer the newest source automatically",
+      "Use the answer as patient-specific advice"
+    ],
+    "answer": "Open the trial and verify population, methods, outcome, and claim",
+    "explanation": "A linked citation can still be wrong, irrelevant, or misinterpreted.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-03-02",
+    "category": "Evidence",
+    "question": "During a CME workshop, a source-linked answer cites a recent trial. What is the next best step?",
+    "options": [
+      "Accept the answer because it has a citation",
+      "Open the trial and verify population, methods, outcome, and claim",
+      "Prefer the newest source automatically",
+      "Use the answer as patient-specific advice"
+    ],
+    "answer": "Open the trial and verify population, methods, outcome, and claim",
+    "explanation": "A linked citation can still be wrong, irrelevant, or misinterpreted.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-03-03",
+    "category": "Evidence",
+    "question": "During a research meeting, a source-linked answer cites a recent trial. What is the next best step?",
+    "options": [
+      "Accept the answer because it has a citation",
+      "Open the trial and verify population, methods, outcome, and claim",
+      "Prefer the newest source automatically",
+      "Use the answer as patient-specific advice"
+    ],
+    "answer": "Open the trial and verify population, methods, outcome, and claim",
+    "explanation": "A linked citation can still be wrong, irrelevant, or misinterpreted.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-03-04",
+    "category": "Evidence",
+    "question": "During a hospital department, a source-linked answer cites a recent trial. What is the next best step?",
+    "options": [
+      "Accept the answer because it has a citation",
+      "Open the trial and verify population, methods, outcome, and claim",
+      "Prefer the newest source automatically",
+      "Use the answer as patient-specific advice"
+    ],
+    "answer": "Open the trial and verify population, methods, outcome, and claim",
+    "explanation": "A linked citation can still be wrong, irrelevant, or misinterpreted.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-03-05",
+    "category": "Evidence",
+    "question": "During a teleconsultation planning, a source-linked answer cites a recent trial. What is the next best step?",
+    "options": [
+      "Accept the answer because it has a citation",
+      "Open the trial and verify population, methods, outcome, and claim",
+      "Prefer the newest source automatically",
+      "Use the answer as patient-specific advice"
+    ],
+    "answer": "Open the trial and verify population, methods, outcome, and claim",
+    "explanation": "A linked citation can still be wrong, irrelevant, or misinterpreted.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-03-06",
+    "category": "Evidence",
+    "question": "During a journal club, a source-linked answer cites a recent trial. What is the next best step?",
+    "options": [
+      "Accept the answer because it has a citation",
+      "Open the trial and verify population, methods, outcome, and claim",
+      "Prefer the newest source automatically",
+      "Use the answer as patient-specific advice"
+    ],
+    "answer": "Open the trial and verify population, methods, outcome, and claim",
+    "explanation": "A linked citation can still be wrong, irrelevant, or misinterpreted.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-04-01",
+    "category": "Automation bias",
+    "question": "During a outpatient clinic, a radiology AI flag conflicts with the clinician's review and clinical context. What is appropriate?",
+    "options": [
+      "Follow AI because it is objective",
+      "Ignore AI permanently",
+      "Reassess image quality, intended use, context, and escalation pathway",
+      "Average the two opinions"
+    ],
+    "answer": "Reassess image quality, intended use, context, and escalation pathway",
+    "explanation": "AI output is decision support. Conflicts require structured review, not automatic acceptance or dismissal.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-04-02",
+    "category": "Automation bias",
+    "question": "During a CME workshop, a radiology AI flag conflicts with the clinician's review and clinical context. What is appropriate?",
+    "options": [
+      "Follow AI because it is objective",
+      "Ignore AI permanently",
+      "Reassess image quality, intended use, context, and escalation pathway",
+      "Average the two opinions"
+    ],
+    "answer": "Reassess image quality, intended use, context, and escalation pathway",
+    "explanation": "AI output is decision support. Conflicts require structured review, not automatic acceptance or dismissal.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-04-03",
+    "category": "Automation bias",
+    "question": "During a research meeting, a radiology AI flag conflicts with the clinician's review and clinical context. What is appropriate?",
+    "options": [
+      "Follow AI because it is objective",
+      "Ignore AI permanently",
+      "Reassess image quality, intended use, context, and escalation pathway",
+      "Average the two opinions"
+    ],
+    "answer": "Reassess image quality, intended use, context, and escalation pathway",
+    "explanation": "AI output is decision support. Conflicts require structured review, not automatic acceptance or dismissal.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-04-04",
+    "category": "Automation bias",
+    "question": "During a hospital department, a radiology AI flag conflicts with the clinician's review and clinical context. What is appropriate?",
+    "options": [
+      "Follow AI because it is objective",
+      "Ignore AI permanently",
+      "Reassess image quality, intended use, context, and escalation pathway",
+      "Average the two opinions"
+    ],
+    "answer": "Reassess image quality, intended use, context, and escalation pathway",
+    "explanation": "AI output is decision support. Conflicts require structured review, not automatic acceptance or dismissal.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-04-05",
+    "category": "Automation bias",
+    "question": "During a teleconsultation planning, a radiology AI flag conflicts with the clinician's review and clinical context. What is appropriate?",
+    "options": [
+      "Follow AI because it is objective",
+      "Ignore AI permanently",
+      "Reassess image quality, intended use, context, and escalation pathway",
+      "Average the two opinions"
+    ],
+    "answer": "Reassess image quality, intended use, context, and escalation pathway",
+    "explanation": "AI output is decision support. Conflicts require structured review, not automatic acceptance or dismissal.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-04-06",
+    "category": "Automation bias",
+    "question": "During a journal club, a radiology AI flag conflicts with the clinician's review and clinical context. What is appropriate?",
+    "options": [
+      "Follow AI because it is objective",
+      "Ignore AI permanently",
+      "Reassess image quality, intended use, context, and escalation pathway",
+      "Average the two opinions"
+    ],
+    "answer": "Reassess image quality, intended use, context, and escalation pathway",
+    "explanation": "AI output is decision support. Conflicts require structured review, not automatic acceptance or dismissal.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-05-01",
+    "category": "Consent",
+    "question": "During a outpatient clinic, before demonstrating ambient scribing with audio, what is required?",
+    "options": [
+      "A general workshop disclaimer only",
+      "Explicit consent and an approved data workflow; synthetic text is safer for a demo",
+      "No action if names are omitted",
+      "A paid account"
+    ],
+    "answer": "Explicit consent and an approved data workflow; synthetic text is safer for a demo",
+    "explanation": "Audio can contain identifiers and sensitive information even when names are not intentionally spoken.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-05-02",
+    "category": "Consent",
+    "question": "During a CME workshop, before demonstrating ambient scribing with audio, what is required?",
+    "options": [
+      "A general workshop disclaimer only",
+      "Explicit consent and an approved data workflow; synthetic text is safer for a demo",
+      "No action if names are omitted",
+      "A paid account"
+    ],
+    "answer": "Explicit consent and an approved data workflow; synthetic text is safer for a demo",
+    "explanation": "Audio can contain identifiers and sensitive information even when names are not intentionally spoken.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-05-03",
+    "category": "Consent",
+    "question": "During a research meeting, before demonstrating ambient scribing with audio, what is required?",
+    "options": [
+      "A general workshop disclaimer only",
+      "Explicit consent and an approved data workflow; synthetic text is safer for a demo",
+      "No action if names are omitted",
+      "A paid account"
+    ],
+    "answer": "Explicit consent and an approved data workflow; synthetic text is safer for a demo",
+    "explanation": "Audio can contain identifiers and sensitive information even when names are not intentionally spoken.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-05-04",
+    "category": "Consent",
+    "question": "During a hospital department, before demonstrating ambient scribing with audio, what is required?",
+    "options": [
+      "A general workshop disclaimer only",
+      "Explicit consent and an approved data workflow; synthetic text is safer for a demo",
+      "No action if names are omitted",
+      "A paid account"
+    ],
+    "answer": "Explicit consent and an approved data workflow; synthetic text is safer for a demo",
+    "explanation": "Audio can contain identifiers and sensitive information even when names are not intentionally spoken.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-05-05",
+    "category": "Consent",
+    "question": "During a teleconsultation planning, before demonstrating ambient scribing with audio, what is required?",
+    "options": [
+      "A general workshop disclaimer only",
+      "Explicit consent and an approved data workflow; synthetic text is safer for a demo",
+      "No action if names are omitted",
+      "A paid account"
+    ],
+    "answer": "Explicit consent and an approved data workflow; synthetic text is safer for a demo",
+    "explanation": "Audio can contain identifiers and sensitive information even when names are not intentionally spoken.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-05-06",
+    "category": "Consent",
+    "question": "During a journal club, before demonstrating ambient scribing with audio, what is required?",
+    "options": [
+      "A general workshop disclaimer only",
+      "Explicit consent and an approved data workflow; synthetic text is safer for a demo",
+      "No action if names are omitted",
+      "A paid account"
+    ],
+    "answer": "Explicit consent and an approved data workflow; synthetic text is safer for a demo",
+    "explanation": "Audio can contain identifiers and sensitive information even when names are not intentionally spoken.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-06-01",
+    "category": "Communication",
+    "question": "During a outpatient clinic, a patient handout is accurate but omits warning signs and escalation advice. What should the clinician do?",
+    "options": [
+      "Publish it because the diagnosis is correct",
+      "Add clinically reviewed warning signs and when to seek care",
+      "Ask the patient to search online",
+      "Add more graphics instead"
+    ],
+    "answer": "Add clinically reviewed warning signs and when to seek care",
+    "explanation": "A readable handout still needs safe, context-appropriate escalation information.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-06-02",
+    "category": "Communication",
+    "question": "During a CME workshop, a patient handout is accurate but omits warning signs and escalation advice. What should the clinician do?",
+    "options": [
+      "Publish it because the diagnosis is correct",
+      "Add clinically reviewed warning signs and when to seek care",
+      "Ask the patient to search online",
+      "Add more graphics instead"
+    ],
+    "answer": "Add clinically reviewed warning signs and when to seek care",
+    "explanation": "A readable handout still needs safe, context-appropriate escalation information.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-06-03",
+    "category": "Communication",
+    "question": "During a research meeting, a patient handout is accurate but omits warning signs and escalation advice. What should the clinician do?",
+    "options": [
+      "Publish it because the diagnosis is correct",
+      "Add clinically reviewed warning signs and when to seek care",
+      "Ask the patient to search online",
+      "Add more graphics instead"
+    ],
+    "answer": "Add clinically reviewed warning signs and when to seek care",
+    "explanation": "A readable handout still needs safe, context-appropriate escalation information.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-06-04",
+    "category": "Communication",
+    "question": "During a hospital department, a patient handout is accurate but omits warning signs and escalation advice. What should the clinician do?",
+    "options": [
+      "Publish it because the diagnosis is correct",
+      "Add clinically reviewed warning signs and when to seek care",
+      "Ask the patient to search online",
+      "Add more graphics instead"
+    ],
+    "answer": "Add clinically reviewed warning signs and when to seek care",
+    "explanation": "A readable handout still needs safe, context-appropriate escalation information.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-06-05",
+    "category": "Communication",
+    "question": "During a teleconsultation planning, a patient handout is accurate but omits warning signs and escalation advice. What should the clinician do?",
+    "options": [
+      "Publish it because the diagnosis is correct",
+      "Add clinically reviewed warning signs and when to seek care",
+      "Ask the patient to search online",
+      "Add more graphics instead"
+    ],
+    "answer": "Add clinically reviewed warning signs and when to seek care",
+    "explanation": "A readable handout still needs safe, context-appropriate escalation information.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-06-06",
+    "category": "Communication",
+    "question": "During a journal club, a patient handout is accurate but omits warning signs and escalation advice. What should the clinician do?",
+    "options": [
+      "Publish it because the diagnosis is correct",
+      "Add clinically reviewed warning signs and when to seek care",
+      "Ask the patient to search online",
+      "Add more graphics instead"
+    ],
+    "answer": "Add clinically reviewed warning signs and when to seek care",
+    "explanation": "A readable handout still needs safe, context-appropriate escalation information.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-07-01",
+    "category": "Regulation",
+    "question": "During a outpatient clinic, a vendor says its company has FDA-cleared products. What can you infer about the exact tool shown?",
+    "options": [
+      "Every company product is cleared",
+      "The tool is cleared in India",
+      "Nothing specific until product, version, indication, and geography are verified",
+      "It can diagnose autonomously"
+    ],
+    "answer": "Nothing specific until product, version, indication, and geography are verified",
+    "explanation": "Regulatory status attaches to a specific product and intended use, not a company name in general.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-07-02",
+    "category": "Regulation",
+    "question": "During a CME workshop, a vendor says its company has FDA-cleared products. What can you infer about the exact tool shown?",
+    "options": [
+      "Every company product is cleared",
+      "The tool is cleared in India",
+      "Nothing specific until product, version, indication, and geography are verified",
+      "It can diagnose autonomously"
+    ],
+    "answer": "Nothing specific until product, version, indication, and geography are verified",
+    "explanation": "Regulatory status attaches to a specific product and intended use, not a company name in general.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-07-03",
+    "category": "Regulation",
+    "question": "During a research meeting, a vendor says its company has FDA-cleared products. What can you infer about the exact tool shown?",
+    "options": [
+      "Every company product is cleared",
+      "The tool is cleared in India",
+      "Nothing specific until product, version, indication, and geography are verified",
+      "It can diagnose autonomously"
+    ],
+    "answer": "Nothing specific until product, version, indication, and geography are verified",
+    "explanation": "Regulatory status attaches to a specific product and intended use, not a company name in general.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-07-04",
+    "category": "Regulation",
+    "question": "During a hospital department, a vendor says its company has FDA-cleared products. What can you infer about the exact tool shown?",
+    "options": [
+      "Every company product is cleared",
+      "The tool is cleared in India",
+      "Nothing specific until product, version, indication, and geography are verified",
+      "It can diagnose autonomously"
+    ],
+    "answer": "Nothing specific until product, version, indication, and geography are verified",
+    "explanation": "Regulatory status attaches to a specific product and intended use, not a company name in general.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-07-05",
+    "category": "Regulation",
+    "question": "During a teleconsultation planning, a vendor says its company has FDA-cleared products. What can you infer about the exact tool shown?",
+    "options": [
+      "Every company product is cleared",
+      "The tool is cleared in India",
+      "Nothing specific until product, version, indication, and geography are verified",
+      "It can diagnose autonomously"
+    ],
+    "answer": "Nothing specific until product, version, indication, and geography are verified",
+    "explanation": "Regulatory status attaches to a specific product and intended use, not a company name in general.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-07-06",
+    "category": "Regulation",
+    "question": "During a journal club, a vendor says its company has FDA-cleared products. What can you infer about the exact tool shown?",
+    "options": [
+      "Every company product is cleared",
+      "The tool is cleared in India",
+      "Nothing specific until product, version, indication, and geography are verified",
+      "It can diagnose autonomously"
+    ],
+    "answer": "Nothing specific until product, version, indication, and geography are verified",
+    "explanation": "Regulatory status attaches to a specific product and intended use, not a company name in general.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-08-01",
+    "category": "Workflow",
+    "question": "During a outpatient clinic, which is the safest first automation for a workshop?",
+    "options": [
+      "Automated diagnosis message",
+      "Unreviewed discharge instruction",
+      "Overdue reminder for a fictional CME planning task",
+      "Automatic medicine change"
+    ],
+    "answer": "Overdue reminder for a fictional CME planning task",
+    "explanation": "A non-clinical administrative reminder is lower risk and keeps clinical judgement outside automation.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-08-02",
+    "category": "Workflow",
+    "question": "During a CME workshop, which is the safest first automation for a workshop?",
+    "options": [
+      "Automated diagnosis message",
+      "Unreviewed discharge instruction",
+      "Overdue reminder for a fictional CME planning task",
+      "Automatic medicine change"
+    ],
+    "answer": "Overdue reminder for a fictional CME planning task",
+    "explanation": "A non-clinical administrative reminder is lower risk and keeps clinical judgement outside automation.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-08-03",
+    "category": "Workflow",
+    "question": "During a research meeting, which is the safest first automation for a workshop?",
+    "options": [
+      "Automated diagnosis message",
+      "Unreviewed discharge instruction",
+      "Overdue reminder for a fictional CME planning task",
+      "Automatic medicine change"
+    ],
+    "answer": "Overdue reminder for a fictional CME planning task",
+    "explanation": "A non-clinical administrative reminder is lower risk and keeps clinical judgement outside automation.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-08-04",
+    "category": "Workflow",
+    "question": "During a hospital department, which is the safest first automation for a workshop?",
+    "options": [
+      "Automated diagnosis message",
+      "Unreviewed discharge instruction",
+      "Overdue reminder for a fictional CME planning task",
+      "Automatic medicine change"
+    ],
+    "answer": "Overdue reminder for a fictional CME planning task",
+    "explanation": "A non-clinical administrative reminder is lower risk and keeps clinical judgement outside automation.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-08-05",
+    "category": "Workflow",
+    "question": "During a teleconsultation planning, which is the safest first automation for a workshop?",
+    "options": [
+      "Automated diagnosis message",
+      "Unreviewed discharge instruction",
+      "Overdue reminder for a fictional CME planning task",
+      "Automatic medicine change"
+    ],
+    "answer": "Overdue reminder for a fictional CME planning task",
+    "explanation": "A non-clinical administrative reminder is lower risk and keeps clinical judgement outside automation.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-08-06",
+    "category": "Workflow",
+    "question": "During a journal club, which is the safest first automation for a workshop?",
+    "options": [
+      "Automated diagnosis message",
+      "Unreviewed discharge instruction",
+      "Overdue reminder for a fictional CME planning task",
+      "Automatic medicine change"
+    ],
+    "answer": "Overdue reminder for a fictional CME planning task",
+    "explanation": "A non-clinical administrative reminder is lower risk and keeps clinical judgement outside automation.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-09-01",
+    "category": "Research",
+    "question": "During a outpatient clinic, notebookLM summarises three uploaded papers. Which statement is correct?",
+    "options": [
+      "Source-grounded output is clinically correct",
+      "The summary replaces critical appraisal",
+      "Each statement still requires checking against the source",
+      "Uploaded papers cannot disagree"
+    ],
+    "answer": "Each statement still requires checking against the source",
+    "explanation": "Grounding limits the source set but does not guarantee accurate interpretation.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-09-02",
+    "category": "Research",
+    "question": "During a CME workshop, notebookLM summarises three uploaded papers. Which statement is correct?",
+    "options": [
+      "Source-grounded output is clinically correct",
+      "The summary replaces critical appraisal",
+      "Each statement still requires checking against the source",
+      "Uploaded papers cannot disagree"
+    ],
+    "answer": "Each statement still requires checking against the source",
+    "explanation": "Grounding limits the source set but does not guarantee accurate interpretation.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-09-03",
+    "category": "Research",
+    "question": "During a research meeting, notebookLM summarises three uploaded papers. Which statement is correct?",
+    "options": [
+      "Source-grounded output is clinically correct",
+      "The summary replaces critical appraisal",
+      "Each statement still requires checking against the source",
+      "Uploaded papers cannot disagree"
+    ],
+    "answer": "Each statement still requires checking against the source",
+    "explanation": "Grounding limits the source set but does not guarantee accurate interpretation.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-09-04",
+    "category": "Research",
+    "question": "During a hospital department, notebookLM summarises three uploaded papers. Which statement is correct?",
+    "options": [
+      "Source-grounded output is clinically correct",
+      "The summary replaces critical appraisal",
+      "Each statement still requires checking against the source",
+      "Uploaded papers cannot disagree"
+    ],
+    "answer": "Each statement still requires checking against the source",
+    "explanation": "Grounding limits the source set but does not guarantee accurate interpretation.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-09-05",
+    "category": "Research",
+    "question": "During a teleconsultation planning, notebookLM summarises three uploaded papers. Which statement is correct?",
+    "options": [
+      "Source-grounded output is clinically correct",
+      "The summary replaces critical appraisal",
+      "Each statement still requires checking against the source",
+      "Uploaded papers cannot disagree"
+    ],
+    "answer": "Each statement still requires checking against the source",
+    "explanation": "Grounding limits the source set but does not guarantee accurate interpretation.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-09-06",
+    "category": "Research",
+    "question": "During a journal club, notebookLM summarises three uploaded papers. Which statement is correct?",
+    "options": [
+      "Source-grounded output is clinically correct",
+      "The summary replaces critical appraisal",
+      "Each statement still requires checking against the source",
+      "Uploaded papers cannot disagree"
+    ],
+    "answer": "Each statement still requires checking against the source",
+    "explanation": "Grounding limits the source set but does not guarantee accurate interpretation.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-10-01",
+    "category": "Social media",
+    "question": "During a outpatient clinic, which draft feature requires immediate review?",
+    "options": [
+      "A guideline link",
+      "A patient photograph with verbal consent only",
+      "A neutral educational disclaimer",
+      "A publication date"
+    ],
+    "answer": "A patient photograph with verbal consent only",
+    "explanation": "Patient images require appropriate consent plus institutional, legal, and professional review; verbal consent alone may be insufficient.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-10-02",
+    "category": "Social media",
+    "question": "During a CME workshop, which draft feature requires immediate review?",
+    "options": [
+      "A guideline link",
+      "A patient photograph with verbal consent only",
+      "A neutral educational disclaimer",
+      "A publication date"
+    ],
+    "answer": "A patient photograph with verbal consent only",
+    "explanation": "Patient images require appropriate consent plus institutional, legal, and professional review; verbal consent alone may be insufficient.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-10-03",
+    "category": "Social media",
+    "question": "During a research meeting, which draft feature requires immediate review?",
+    "options": [
+      "A guideline link",
+      "A patient photograph with verbal consent only",
+      "A neutral educational disclaimer",
+      "A publication date"
+    ],
+    "answer": "A patient photograph with verbal consent only",
+    "explanation": "Patient images require appropriate consent plus institutional, legal, and professional review; verbal consent alone may be insufficient.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-10-04",
+    "category": "Social media",
+    "question": "During a hospital department, which draft feature requires immediate review?",
+    "options": [
+      "A guideline link",
+      "A patient photograph with verbal consent only",
+      "A neutral educational disclaimer",
+      "A publication date"
+    ],
+    "answer": "A patient photograph with verbal consent only",
+    "explanation": "Patient images require appropriate consent plus institutional, legal, and professional review; verbal consent alone may be insufficient.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-10-05",
+    "category": "Social media",
+    "question": "During a teleconsultation planning, which draft feature requires immediate review?",
+    "options": [
+      "A guideline link",
+      "A patient photograph with verbal consent only",
+      "A neutral educational disclaimer",
+      "A publication date"
+    ],
+    "answer": "A patient photograph with verbal consent only",
+    "explanation": "Patient images require appropriate consent plus institutional, legal, and professional review; verbal consent alone may be insufficient.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-10-06",
+    "category": "Social media",
+    "question": "During a journal club, which draft feature requires immediate review?",
+    "options": [
+      "A guideline link",
+      "A patient photograph with verbal consent only",
+      "A neutral educational disclaimer",
+      "A publication date"
+    ],
+    "answer": "A patient photograph with verbal consent only",
+    "explanation": "Patient images require appropriate consent plus institutional, legal, and professional review; verbal consent alone may be insufficient.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-11-01",
+    "category": "Pricing",
+    "question": "During a outpatient clinic, a catalogue shows a price checked last month. How should it be used?",
+    "options": [
+      "As a binding quote",
+      "As dated orientation followed by an official price check",
+      "As evidence of India availability",
+      "As proof of a free tier"
+    ],
+    "answer": "As dated orientation followed by an official price check",
+    "explanation": "Prices, taxes, eligibility, and regional terms change and must be checked before purchase.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-11-02",
+    "category": "Pricing",
+    "question": "During a CME workshop, a catalogue shows a price checked last month. How should it be used?",
+    "options": [
+      "As a binding quote",
+      "As dated orientation followed by an official price check",
+      "As evidence of India availability",
+      "As proof of a free tier"
+    ],
+    "answer": "As dated orientation followed by an official price check",
+    "explanation": "Prices, taxes, eligibility, and regional terms change and must be checked before purchase.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-11-03",
+    "category": "Pricing",
+    "question": "During a research meeting, a catalogue shows a price checked last month. How should it be used?",
+    "options": [
+      "As a binding quote",
+      "As dated orientation followed by an official price check",
+      "As evidence of India availability",
+      "As proof of a free tier"
+    ],
+    "answer": "As dated orientation followed by an official price check",
+    "explanation": "Prices, taxes, eligibility, and regional terms change and must be checked before purchase.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-11-04",
+    "category": "Pricing",
+    "question": "During a hospital department, a catalogue shows a price checked last month. How should it be used?",
+    "options": [
+      "As a binding quote",
+      "As dated orientation followed by an official price check",
+      "As evidence of India availability",
+      "As proof of a free tier"
+    ],
+    "answer": "As dated orientation followed by an official price check",
+    "explanation": "Prices, taxes, eligibility, and regional terms change and must be checked before purchase.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-11-05",
+    "category": "Pricing",
+    "question": "During a teleconsultation planning, a catalogue shows a price checked last month. How should it be used?",
+    "options": [
+      "As a binding quote",
+      "As dated orientation followed by an official price check",
+      "As evidence of India availability",
+      "As proof of a free tier"
+    ],
+    "answer": "As dated orientation followed by an official price check",
+    "explanation": "Prices, taxes, eligibility, and regional terms change and must be checked before purchase.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-11-06",
+    "category": "Pricing",
+    "question": "During a journal club, a catalogue shows a price checked last month. How should it be used?",
+    "options": [
+      "As a binding quote",
+      "As dated orientation followed by an official price check",
+      "As evidence of India availability",
+      "As proof of a free tier"
+    ],
+    "answer": "As dated orientation followed by an official price check",
+    "explanation": "Prices, taxes, eligibility, and regional terms change and must be checked before purchase.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-12-01",
+    "category": "Equity",
+    "question": "During a outpatient clinic, a diagnostic model performed well in one country and age group. What remains important?",
+    "options": [
+      "Nothing; accuracy is universal",
+      "Performance across the intended local population and workflow",
+      "Only interface design",
+      "Only model size"
+    ],
+    "answer": "Performance across the intended local population and workflow",
+    "explanation": "Transportability cannot be assumed across prevalence, equipment, populations, and clinical pathways.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-12-02",
+    "category": "Equity",
+    "question": "During a CME workshop, a diagnostic model performed well in one country and age group. What remains important?",
+    "options": [
+      "Nothing; accuracy is universal",
+      "Performance across the intended local population and workflow",
+      "Only interface design",
+      "Only model size"
+    ],
+    "answer": "Performance across the intended local population and workflow",
+    "explanation": "Transportability cannot be assumed across prevalence, equipment, populations, and clinical pathways.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-12-03",
+    "category": "Equity",
+    "question": "During a research meeting, a diagnostic model performed well in one country and age group. What remains important?",
+    "options": [
+      "Nothing; accuracy is universal",
+      "Performance across the intended local population and workflow",
+      "Only interface design",
+      "Only model size"
+    ],
+    "answer": "Performance across the intended local population and workflow",
+    "explanation": "Transportability cannot be assumed across prevalence, equipment, populations, and clinical pathways.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-12-04",
+    "category": "Equity",
+    "question": "During a hospital department, a diagnostic model performed well in one country and age group. What remains important?",
+    "options": [
+      "Nothing; accuracy is universal",
+      "Performance across the intended local population and workflow",
+      "Only interface design",
+      "Only model size"
+    ],
+    "answer": "Performance across the intended local population and workflow",
+    "explanation": "Transportability cannot be assumed across prevalence, equipment, populations, and clinical pathways.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-12-05",
+    "category": "Equity",
+    "question": "During a teleconsultation planning, a diagnostic model performed well in one country and age group. What remains important?",
+    "options": [
+      "Nothing; accuracy is universal",
+      "Performance across the intended local population and workflow",
+      "Only interface design",
+      "Only model size"
+    ],
+    "answer": "Performance across the intended local population and workflow",
+    "explanation": "Transportability cannot be assumed across prevalence, equipment, populations, and clinical pathways.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-12-06",
+    "category": "Equity",
+    "question": "During a journal club, a diagnostic model performed well in one country and age group. What remains important?",
+    "options": [
+      "Nothing; accuracy is universal",
+      "Performance across the intended local population and workflow",
+      "Only interface design",
+      "Only model size"
+    ],
+    "answer": "Performance across the intended local population and workflow",
+    "explanation": "Transportability cannot be assumed across prevalence, equipment, populations, and clinical pathways.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-13-01",
+    "category": "Copyright",
+    "question": "During a outpatient clinic, what is the safest journal-club upload practice?",
+    "options": [
+      "Upload any publisher PDF to any public service",
+      "Use openly shareable or authorised papers and respect licence terms",
+      "Remove the first page only",
+      "Convert the article to images"
+    ],
+    "answer": "Use openly shareable or authorised papers and respect licence terms",
+    "explanation": "Changing file format does not remove copyright or confidentiality obligations.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-13-02",
+    "category": "Copyright",
+    "question": "During a CME workshop, what is the safest journal-club upload practice?",
+    "options": [
+      "Upload any publisher PDF to any public service",
+      "Use openly shareable or authorised papers and respect licence terms",
+      "Remove the first page only",
+      "Convert the article to images"
+    ],
+    "answer": "Use openly shareable or authorised papers and respect licence terms",
+    "explanation": "Changing file format does not remove copyright or confidentiality obligations.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-13-03",
+    "category": "Copyright",
+    "question": "During a research meeting, what is the safest journal-club upload practice?",
+    "options": [
+      "Upload any publisher PDF to any public service",
+      "Use openly shareable or authorised papers and respect licence terms",
+      "Remove the first page only",
+      "Convert the article to images"
+    ],
+    "answer": "Use openly shareable or authorised papers and respect licence terms",
+    "explanation": "Changing file format does not remove copyright or confidentiality obligations.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-13-04",
+    "category": "Copyright",
+    "question": "During a hospital department, what is the safest journal-club upload practice?",
+    "options": [
+      "Upload any publisher PDF to any public service",
+      "Use openly shareable or authorised papers and respect licence terms",
+      "Remove the first page only",
+      "Convert the article to images"
+    ],
+    "answer": "Use openly shareable or authorised papers and respect licence terms",
+    "explanation": "Changing file format does not remove copyright or confidentiality obligations.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-13-05",
+    "category": "Copyright",
+    "question": "During a teleconsultation planning, what is the safest journal-club upload practice?",
+    "options": [
+      "Upload any publisher PDF to any public service",
+      "Use openly shareable or authorised papers and respect licence terms",
+      "Remove the first page only",
+      "Convert the article to images"
+    ],
+    "answer": "Use openly shareable or authorised papers and respect licence terms",
+    "explanation": "Changing file format does not remove copyright or confidentiality obligations.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-13-06",
+    "category": "Copyright",
+    "question": "During a journal club, what is the safest journal-club upload practice?",
+    "options": [
+      "Upload any publisher PDF to any public service",
+      "Use openly shareable or authorised papers and respect licence terms",
+      "Remove the first page only",
+      "Convert the article to images"
+    ],
+    "answer": "Use openly shareable or authorised papers and respect licence terms",
+    "explanation": "Changing file format does not remove copyright or confidentiality obligations.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-14-01",
+    "category": "Accountability",
+    "question": "During a outpatient clinic, who owns the final clinical note after an AI scribe drafts it?",
+    "options": [
+      "The AI vendor",
+      "The patient",
+      "The qualified clinician and responsible institution under applicable policy",
+      "No one if it is labelled draft"
+    ],
+    "answer": "The qualified clinician and responsible institution under applicable policy",
+    "explanation": "Draft generation does not transfer professional accountability.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-14-02",
+    "category": "Accountability",
+    "question": "During a CME workshop, who owns the final clinical note after an AI scribe drafts it?",
+    "options": [
+      "The AI vendor",
+      "The patient",
+      "The qualified clinician and responsible institution under applicable policy",
+      "No one if it is labelled draft"
+    ],
+    "answer": "The qualified clinician and responsible institution under applicable policy",
+    "explanation": "Draft generation does not transfer professional accountability.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-14-03",
+    "category": "Accountability",
+    "question": "During a research meeting, who owns the final clinical note after an AI scribe drafts it?",
+    "options": [
+      "The AI vendor",
+      "The patient",
+      "The qualified clinician and responsible institution under applicable policy",
+      "No one if it is labelled draft"
+    ],
+    "answer": "The qualified clinician and responsible institution under applicable policy",
+    "explanation": "Draft generation does not transfer professional accountability.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-14-04",
+    "category": "Accountability",
+    "question": "During a hospital department, who owns the final clinical note after an AI scribe drafts it?",
+    "options": [
+      "The AI vendor",
+      "The patient",
+      "The qualified clinician and responsible institution under applicable policy",
+      "No one if it is labelled draft"
+    ],
+    "answer": "The qualified clinician and responsible institution under applicable policy",
+    "explanation": "Draft generation does not transfer professional accountability.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-14-05",
+    "category": "Accountability",
+    "question": "During a teleconsultation planning, who owns the final clinical note after an AI scribe drafts it?",
+    "options": [
+      "The AI vendor",
+      "The patient",
+      "The qualified clinician and responsible institution under applicable policy",
+      "No one if it is labelled draft"
+    ],
+    "answer": "The qualified clinician and responsible institution under applicable policy",
+    "explanation": "Draft generation does not transfer professional accountability.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-14-06",
+    "category": "Accountability",
+    "question": "During a journal club, who owns the final clinical note after an AI scribe drafts it?",
+    "options": [
+      "The AI vendor",
+      "The patient",
+      "The qualified clinician and responsible institution under applicable policy",
+      "No one if it is labelled draft"
+    ],
+    "answer": "The qualified clinician and responsible institution under applicable policy",
+    "explanation": "Draft generation does not transfer professional accountability.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-15-01",
+    "category": "Uncertainty",
+    "question": "During a outpatient clinic, the source does not state a medicine dose. What should the AI output do?",
+    "options": [
+      "Infer the common dose",
+      "Omit the medicine",
+      "State that the dose is missing and requires verification",
+      "Choose the lowest dose"
+    ],
+    "answer": "State that the dose is missing and requires verification",
+    "explanation": "Unknown clinical information must remain visible rather than being guessed or silently removed.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-15-02",
+    "category": "Uncertainty",
+    "question": "During a CME workshop, the source does not state a medicine dose. What should the AI output do?",
+    "options": [
+      "Infer the common dose",
+      "Omit the medicine",
+      "State that the dose is missing and requires verification",
+      "Choose the lowest dose"
+    ],
+    "answer": "State that the dose is missing and requires verification",
+    "explanation": "Unknown clinical information must remain visible rather than being guessed or silently removed.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-15-03",
+    "category": "Uncertainty",
+    "question": "During a research meeting, the source does not state a medicine dose. What should the AI output do?",
+    "options": [
+      "Infer the common dose",
+      "Omit the medicine",
+      "State that the dose is missing and requires verification",
+      "Choose the lowest dose"
+    ],
+    "answer": "State that the dose is missing and requires verification",
+    "explanation": "Unknown clinical information must remain visible rather than being guessed or silently removed.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-15-04",
+    "category": "Uncertainty",
+    "question": "During a hospital department, the source does not state a medicine dose. What should the AI output do?",
+    "options": [
+      "Infer the common dose",
+      "Omit the medicine",
+      "State that the dose is missing and requires verification",
+      "Choose the lowest dose"
+    ],
+    "answer": "State that the dose is missing and requires verification",
+    "explanation": "Unknown clinical information must remain visible rather than being guessed or silently removed.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-15-05",
+    "category": "Uncertainty",
+    "question": "During a teleconsultation planning, the source does not state a medicine dose. What should the AI output do?",
+    "options": [
+      "Infer the common dose",
+      "Omit the medicine",
+      "State that the dose is missing and requires verification",
+      "Choose the lowest dose"
+    ],
+    "answer": "State that the dose is missing and requires verification",
+    "explanation": "Unknown clinical information must remain visible rather than being guessed or silently removed.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-15-06",
+    "category": "Uncertainty",
+    "question": "During a journal club, the source does not state a medicine dose. What should the AI output do?",
+    "options": [
+      "Infer the common dose",
+      "Omit the medicine",
+      "State that the dose is missing and requires verification",
+      "Choose the lowest dose"
+    ],
+    "answer": "State that the dose is missing and requires verification",
+    "explanation": "Unknown clinical information must remain visible rather than being guessed or silently removed.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-16-01",
+    "category": "Image quality",
+    "question": "During a outpatient clinic, before interpreting an AI-highlighted region, what should be checked first?",
+    "options": [
+      "The colour of the heatmap",
+      "Image quality, modality, body region, and intended-use conditions",
+      "The vendor logo",
+      "The confidence score alone"
+    ],
+    "answer": "Image quality, modality, body region, and intended-use conditions",
+    "explanation": "Poor or out-of-scope input can make downstream output unreliable regardless of interface confidence.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-16-02",
+    "category": "Image quality",
+    "question": "During a CME workshop, before interpreting an AI-highlighted region, what should be checked first?",
+    "options": [
+      "The colour of the heatmap",
+      "Image quality, modality, body region, and intended-use conditions",
+      "The vendor logo",
+      "The confidence score alone"
+    ],
+    "answer": "Image quality, modality, body region, and intended-use conditions",
+    "explanation": "Poor or out-of-scope input can make downstream output unreliable regardless of interface confidence.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-16-03",
+    "category": "Image quality",
+    "question": "During a research meeting, before interpreting an AI-highlighted region, what should be checked first?",
+    "options": [
+      "The colour of the heatmap",
+      "Image quality, modality, body region, and intended-use conditions",
+      "The vendor logo",
+      "The confidence score alone"
+    ],
+    "answer": "Image quality, modality, body region, and intended-use conditions",
+    "explanation": "Poor or out-of-scope input can make downstream output unreliable regardless of interface confidence.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-16-04",
+    "category": "Image quality",
+    "question": "During a hospital department, before interpreting an AI-highlighted region, what should be checked first?",
+    "options": [
+      "The colour of the heatmap",
+      "Image quality, modality, body region, and intended-use conditions",
+      "The vendor logo",
+      "The confidence score alone"
+    ],
+    "answer": "Image quality, modality, body region, and intended-use conditions",
+    "explanation": "Poor or out-of-scope input can make downstream output unreliable regardless of interface confidence.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-16-05",
+    "category": "Image quality",
+    "question": "During a teleconsultation planning, before interpreting an AI-highlighted region, what should be checked first?",
+    "options": [
+      "The colour of the heatmap",
+      "Image quality, modality, body region, and intended-use conditions",
+      "The vendor logo",
+      "The confidence score alone"
+    ],
+    "answer": "Image quality, modality, body region, and intended-use conditions",
+    "explanation": "Poor or out-of-scope input can make downstream output unreliable regardless of interface confidence.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-16-06",
+    "category": "Image quality",
+    "question": "During a journal club, before interpreting an AI-highlighted region, what should be checked first?",
+    "options": [
+      "The colour of the heatmap",
+      "Image quality, modality, body region, and intended-use conditions",
+      "The vendor logo",
+      "The confidence score alone"
+    ],
+    "answer": "Image quality, modality, body region, and intended-use conditions",
+    "explanation": "Poor or out-of-scope input can make downstream output unreliable regardless of interface confidence.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-17-01",
+    "category": "Human override",
+    "question": "During a outpatient clinic, a workflow has no way for staff to stop an automated action. What is missing?",
+    "options": [
+      "A larger dataset",
+      "Human override and exception handling",
+      "A logo",
+      "A shorter prompt"
+    ],
+    "answer": "Human override and exception handling",
+    "explanation": "Safe systems need accountable owners, stopping rules, and a route for exceptions.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-17-02",
+    "category": "Human override",
+    "question": "During a CME workshop, a workflow has no way for staff to stop an automated action. What is missing?",
+    "options": [
+      "A larger dataset",
+      "Human override and exception handling",
+      "A logo",
+      "A shorter prompt"
+    ],
+    "answer": "Human override and exception handling",
+    "explanation": "Safe systems need accountable owners, stopping rules, and a route for exceptions.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-17-03",
+    "category": "Human override",
+    "question": "During a research meeting, a workflow has no way for staff to stop an automated action. What is missing?",
+    "options": [
+      "A larger dataset",
+      "Human override and exception handling",
+      "A logo",
+      "A shorter prompt"
+    ],
+    "answer": "Human override and exception handling",
+    "explanation": "Safe systems need accountable owners, stopping rules, and a route for exceptions.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-17-04",
+    "category": "Human override",
+    "question": "During a hospital department, a workflow has no way for staff to stop an automated action. What is missing?",
+    "options": [
+      "A larger dataset",
+      "Human override and exception handling",
+      "A logo",
+      "A shorter prompt"
+    ],
+    "answer": "Human override and exception handling",
+    "explanation": "Safe systems need accountable owners, stopping rules, and a route for exceptions.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-17-05",
+    "category": "Human override",
+    "question": "During a teleconsultation planning, a workflow has no way for staff to stop an automated action. What is missing?",
+    "options": [
+      "A larger dataset",
+      "Human override and exception handling",
+      "A logo",
+      "A shorter prompt"
+    ],
+    "answer": "Human override and exception handling",
+    "explanation": "Safe systems need accountable owners, stopping rules, and a route for exceptions.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-17-06",
+    "category": "Human override",
+    "question": "During a journal club, a workflow has no way for staff to stop an automated action. What is missing?",
+    "options": [
+      "A larger dataset",
+      "Human override and exception handling",
+      "A logo",
+      "A shorter prompt"
+    ],
+    "answer": "Human override and exception handling",
+    "explanation": "Safe systems need accountable owners, stopping rules, and a route for exceptions.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-18-01",
+    "category": "Differential reasoning",
+    "question": "During a outpatient clinic, what is a safe role for a general AI assistant in differential diagnosis?",
+    "options": [
+      "Choose the final diagnosis",
+      "Prescribe treatment",
+      "Organise supporting, opposing, and missing features for clinician review",
+      "Rule out emergencies autonomously"
+    ],
+    "answer": "Organise supporting, opposing, and missing features for clinician review",
+    "explanation": "Structured brainstorming can support reasoning but cannot replace examination, testing, or clinical accountability.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-18-02",
+    "category": "Differential reasoning",
+    "question": "During a CME workshop, what is a safe role for a general AI assistant in differential diagnosis?",
+    "options": [
+      "Choose the final diagnosis",
+      "Prescribe treatment",
+      "Organise supporting, opposing, and missing features for clinician review",
+      "Rule out emergencies autonomously"
+    ],
+    "answer": "Organise supporting, opposing, and missing features for clinician review",
+    "explanation": "Structured brainstorming can support reasoning but cannot replace examination, testing, or clinical accountability.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-18-03",
+    "category": "Differential reasoning",
+    "question": "During a research meeting, what is a safe role for a general AI assistant in differential diagnosis?",
+    "options": [
+      "Choose the final diagnosis",
+      "Prescribe treatment",
+      "Organise supporting, opposing, and missing features for clinician review",
+      "Rule out emergencies autonomously"
+    ],
+    "answer": "Organise supporting, opposing, and missing features for clinician review",
+    "explanation": "Structured brainstorming can support reasoning but cannot replace examination, testing, or clinical accountability.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-18-04",
+    "category": "Differential reasoning",
+    "question": "During a hospital department, what is a safe role for a general AI assistant in differential diagnosis?",
+    "options": [
+      "Choose the final diagnosis",
+      "Prescribe treatment",
+      "Organise supporting, opposing, and missing features for clinician review",
+      "Rule out emergencies autonomously"
+    ],
+    "answer": "Organise supporting, opposing, and missing features for clinician review",
+    "explanation": "Structured brainstorming can support reasoning but cannot replace examination, testing, or clinical accountability.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-18-05",
+    "category": "Differential reasoning",
+    "question": "During a teleconsultation planning, what is a safe role for a general AI assistant in differential diagnosis?",
+    "options": [
+      "Choose the final diagnosis",
+      "Prescribe treatment",
+      "Organise supporting, opposing, and missing features for clinician review",
+      "Rule out emergencies autonomously"
+    ],
+    "answer": "Organise supporting, opposing, and missing features for clinician review",
+    "explanation": "Structured brainstorming can support reasoning but cannot replace examination, testing, or clinical accountability.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-18-06",
+    "category": "Differential reasoning",
+    "question": "During a journal club, what is a safe role for a general AI assistant in differential diagnosis?",
+    "options": [
+      "Choose the final diagnosis",
+      "Prescribe treatment",
+      "Organise supporting, opposing, and missing features for clinician review",
+      "Rule out emergencies autonomously"
+    ],
+    "answer": "Organise supporting, opposing, and missing features for clinician review",
+    "explanation": "Structured brainstorming can support reasoning but cannot replace examination, testing, or clinical accountability.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-19-01",
+    "category": "Data retention",
+    "question": "During a outpatient clinic, a tool deletes audio after transcription but retains generated notes. What should the institution do?",
+    "options": [
+      "Assume there is no privacy risk",
+      "Review the complete data lifecycle, contract, retention, access, and subprocessors",
+      "Use shorter recordings",
+      "Rely only on the vendor homepage"
+    ],
+    "answer": "Review the complete data lifecycle, contract, retention, access, and subprocessors",
+    "explanation": "Deletion of one data type does not answer how all sensitive content is stored, used, or shared.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-19-02",
+    "category": "Data retention",
+    "question": "During a CME workshop, a tool deletes audio after transcription but retains generated notes. What should the institution do?",
+    "options": [
+      "Assume there is no privacy risk",
+      "Review the complete data lifecycle, contract, retention, access, and subprocessors",
+      "Use shorter recordings",
+      "Rely only on the vendor homepage"
+    ],
+    "answer": "Review the complete data lifecycle, contract, retention, access, and subprocessors",
+    "explanation": "Deletion of one data type does not answer how all sensitive content is stored, used, or shared.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-19-03",
+    "category": "Data retention",
+    "question": "During a research meeting, a tool deletes audio after transcription but retains generated notes. What should the institution do?",
+    "options": [
+      "Assume there is no privacy risk",
+      "Review the complete data lifecycle, contract, retention, access, and subprocessors",
+      "Use shorter recordings",
+      "Rely only on the vendor homepage"
+    ],
+    "answer": "Review the complete data lifecycle, contract, retention, access, and subprocessors",
+    "explanation": "Deletion of one data type does not answer how all sensitive content is stored, used, or shared.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-19-04",
+    "category": "Data retention",
+    "question": "During a hospital department, a tool deletes audio after transcription but retains generated notes. What should the institution do?",
+    "options": [
+      "Assume there is no privacy risk",
+      "Review the complete data lifecycle, contract, retention, access, and subprocessors",
+      "Use shorter recordings",
+      "Rely only on the vendor homepage"
+    ],
+    "answer": "Review the complete data lifecycle, contract, retention, access, and subprocessors",
+    "explanation": "Deletion of one data type does not answer how all sensitive content is stored, used, or shared.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-19-05",
+    "category": "Data retention",
+    "question": "During a teleconsultation planning, a tool deletes audio after transcription but retains generated notes. What should the institution do?",
+    "options": [
+      "Assume there is no privacy risk",
+      "Review the complete data lifecycle, contract, retention, access, and subprocessors",
+      "Use shorter recordings",
+      "Rely only on the vendor homepage"
+    ],
+    "answer": "Review the complete data lifecycle, contract, retention, access, and subprocessors",
+    "explanation": "Deletion of one data type does not answer how all sensitive content is stored, used, or shared.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-19-06",
+    "category": "Data retention",
+    "question": "During a journal club, a tool deletes audio after transcription but retains generated notes. What should the institution do?",
+    "options": [
+      "Assume there is no privacy risk",
+      "Review the complete data lifecycle, contract, retention, access, and subprocessors",
+      "Use shorter recordings",
+      "Rely only on the vendor homepage"
+    ],
+    "answer": "Review the complete data lifecycle, contract, retention, access, and subprocessors",
+    "explanation": "Deletion of one data type does not answer how all sensitive content is stored, used, or shared.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-20-01",
+    "category": "Clinical communication",
+    "question": "During a outpatient clinic, an automated reminder is ready to send to patients. What is required?",
+    "options": [
+      "Send it immediately",
+      "Clinical, privacy, audience, escalation, and workflow review before use",
+      "Only spelling review",
+      "A social-media account"
+    ],
+    "answer": "Clinical, privacy, audience, escalation, and workflow review before use",
+    "explanation": "Patient communication can influence care and must be governed and reviewed even when the message appears routine.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-20-02",
+    "category": "Clinical communication",
+    "question": "During a CME workshop, an automated reminder is ready to send to patients. What is required?",
+    "options": [
+      "Send it immediately",
+      "Clinical, privacy, audience, escalation, and workflow review before use",
+      "Only spelling review",
+      "A social-media account"
+    ],
+    "answer": "Clinical, privacy, audience, escalation, and workflow review before use",
+    "explanation": "Patient communication can influence care and must be governed and reviewed even when the message appears routine.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-20-03",
+    "category": "Clinical communication",
+    "question": "During a research meeting, an automated reminder is ready to send to patients. What is required?",
+    "options": [
+      "Send it immediately",
+      "Clinical, privacy, audience, escalation, and workflow review before use",
+      "Only spelling review",
+      "A social-media account"
+    ],
+    "answer": "Clinical, privacy, audience, escalation, and workflow review before use",
+    "explanation": "Patient communication can influence care and must be governed and reviewed even when the message appears routine.",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "q-20-04",
+    "category": "Clinical communication",
+    "question": "During a hospital department, an automated reminder is ready to send to patients. What is required?",
+    "options": [
+      "Send it immediately",
+      "Clinical, privacy, audience, escalation, and workflow review before use",
+      "Only spelling review",
+      "A social-media account"
+    ],
+    "answer": "Clinical, privacy, audience, escalation, and workflow review before use",
+    "explanation": "Patient communication can influence care and must be governed and reviewed even when the message appears routine.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "q-20-05",
+    "category": "Clinical communication",
+    "question": "During a teleconsultation planning, an automated reminder is ready to send to patients. What is required?",
+    "options": [
+      "Send it immediately",
+      "Clinical, privacy, audience, escalation, and workflow review before use",
+      "Only spelling review",
+      "A social-media account"
+    ],
+    "answer": "Clinical, privacy, audience, escalation, and workflow review before use",
+    "explanation": "Patient communication can influence care and must be governed and reviewed even when the message appears routine.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "q-20-06",
+    "category": "Clinical communication",
+    "question": "During a journal club, an automated reminder is ready to send to patients. What is required?",
+    "options": [
+      "Send it immediately",
+      "Clinical, privacy, audience, escalation, and workflow review before use",
+      "Only spelling review",
+      "A social-media account"
+    ],
+    "answer": "Clinical, privacy, audience, escalation, and workflow review before use",
+    "explanation": "Patient communication can influence care and must be governed and reviewed even when the message appears routine.",
+    "difficulty": "Beginner"
+  }
+]

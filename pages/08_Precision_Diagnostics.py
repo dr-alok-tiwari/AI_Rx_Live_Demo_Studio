@@ -1,0 +1,3 @@
+from page_views import render_precision_diagnostics
+
+render_precision_diagnostics()

@@ -1,0 +1,113 @@
+{"kind":"deck","id":"pr/sh9o9c","name":"Deck"}
+{"kind":"layout","layoutId":"8a708b62-0d1c-4420-bf1a-7edcc8e0864c","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"9bdf43e6-35ec-4ee2-9f3b-9b0ba80853bb","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/2rq6wa","slide":1,"title":"AI RX · CLINICAL PRACTICE & PATIENT CARE","textShapes":5}
+{"kind":"shape","id":"sh/cfi1gzmd","slide":1,"bbox":[38,54,710,400]}
+{"kind":"textbox","id":"sh/dgri94ny","slide":1,"text":"AI RX · CLINICAL PRACTICE & PATIENT CARE","textPreview":"AI RX · CLINICAL PRACTICE & PATIENT CARE","textChars":40,"textLines":1,"bbox":[76,80,620,24]}
+{"kind":"textbox","id":"sh/eh0ji94j","slide":1,"text":"AI Rx","textPreview":"AI Rx","textChars":5,"textLines":1,"bbox":[74,232,400,78]}
+{"kind":"textbox","id":"sh/zi90be5o","slide":1,"text":"AI tools for clinical practice and patient care","textPreview":"AI tools for clinical practice and patient care","textChars":47,"textLines":1,"bbox":[78,332,660,42]}
+{"kind":"shape","id":"sh/0j21kjm9","slide":1,"bbox":[74,500,240,34]}
+{"kind":"textbox","id":"sh/1kbid4nu","slide":1,"text":"PARTICIPANT RECAP","textPreview":"PARTICIPANT RECAP","textChars":17,"textLines":1,"bbox":[88,508,212,18]}
+{"kind":"shape","id":"sh/ulgz654z","slide":1,"bbox":[72,548,900,104]}
+{"kind":"textbox","id":"sh/fmp0za5k","slide":1,"text":"Seven slides to take back to practice · Copy-ready prompts and patient-centred decision support","textPreview":"Seven slides to take back to practice · Copy-ready prompts and patient-centred decision support","textChars":95,"textLines":1,"bbox":[100,571,840,62]}
+{"kind":"image","id":"im/eh0jyxgz","slide":1,"name":"","alt":"AI Rx clinical workshop cover","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/2rq6wa","slide":1,"text":"Use this short deck as the participant take-home recap. It is intentionally concise and mirrors the app navigation.\n\n[Sources]\n- AI Rx Live Demo Studio, project-authored workshop framework\n[/Sources]"}
+{"kind":"slide","id":"sl/cdhcng","slide":2,"title":"RULE 1","textShapes":7}
+{"kind":"shape","id":"sh/lgzidcvy","slide":2,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/yt8zihcn","slide":2,"text":"RULE 1","textPreview":"RULE 1","textChars":6,"textLines":1,"bbox":[68,54,620,20]}
+{"kind":"textbox","id":"sh/zeh0bmd8","slide":2,"text":"Start with the patient—not the model","textPreview":"Start with the patient—not the model","textChars":36,"textLines":1,"bbox":[68,82,1030,70]}
+{"kind":"textbox","id":"sh/crqhg7uh","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1130,51,80,38]}
+{"kind":"shape","id":"sh/dszi9cv2","slide":2,"bbox":[120,185,1040,230]}
+{"kind":"textbox","id":"sh/qpozexcb","slide":2,"text":"Patient need → Specialty context → Evidence → AI support → Doctor judgment → Patient action","textPreview":"Patient need → Specialty context → Evidence → AI support → Doctor judgment → Patient action","textChars":91,"textLines":1,"bbox":[170,248,940,110]}
+{"kind":"shape","id":"sh/bqx072dw","slide":2,"bbox":[380,470,520,32]}
+{"kind":"textbox","id":"sh/on6hc7u5","slide":2,"text":"AI IS A SUPPORTING STEP · NOT THE NORTH STAR","textPreview":"AI IS A SUPPORTING STEP · NOT THE NORTH STAR","textChars":44,"textLines":1,"bbox":[392,476,496,20]}
+{"kind":"shape","id":"sh/pofi5svq","slide":2,"bbox":[68,676,1144,1]}
+{"kind":"textbox","id":"sh/d8bmtkje","slide":2,"text":"AI Rx · Participant recap","textPreview":"AI Rx · Participant recap","textChars":25,"textLines":1,"bbox":[68,684,720,18]}
+{"kind":"textbox","id":"sh/s72lkfit","slide":2,"text":"Workshop material · Not clinical advice","textPreview":"Workshop material · Not clinical advice","textChars":39,"textLines":1,"bbox":[900,684,312,18]}
+{"kind":"notes","id":"nt/cdhcng","slide":2,"text":"Use this sequence to decide whether AI belongs in the workflow at all. If the patient need and decision question are unclear, do not begin with a model.\n\n[Sources]\n- AI Rx Live Demo Studio, project-authored workshop framework\n[/Sources]"}
+{"kind":"slide","id":"sl/dfwn80","slide":3,"title":"RULE 2","textShapes":9}
+{"kind":"shape","id":"sh/7i1c7up0","slide":3,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/sjadgz65","slide":3,"text":"RULE 2","textPreview":"RULE 2","textChars":6,"textLines":1,"bbox":[68,54,620,20]}
+{"kind":"textbox","id":"sh/tkju947q","slide":3,"text":"Use the full prompt exactly as supplied","textPreview":"Use the full prompt exactly as supplied","textChars":39,"textLines":1,"bbox":[68,82,1030,70]}
+{"kind":"textbox","id":"sh/ulsvi9ob","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1130,51,80,38]}
+{"kind":"shape","id":"sh/fmlcbepw","slide":3,"bbox":[68,165,540,380]}
+{"kind":"textbox","id":"sh/gnudkz6h","slide":3,"text":"COPY → PASTE → REPLACE FIELDS","textPreview":"COPY → PASTE → REPLACE FIELDS","textChars":29,"textLines":1,"bbox":[102,205,472,28]}
+{"kind":"textbox","id":"sh/ho3ud4n2","slide":3,"text":"The visible prompt already contains role, context, uncertainty, output structure and safety boundaries.","textPreview":"The visible prompt already contains role, context, uncertainty, output structure and safety boundaries.","textChars":103,"textLines":1,"bbox":[102,276,448,170]}
+{"kind":"shape","id":"sh/2pcvm9on","slide":3,"bbox":[646,165,498,380]}
+{"kind":"textbox","id":"sh/3qlcfe58","slide":3,"text":"Replace only","textPreview":"Replace only","textChars":12,"textLines":1,"bbox":[680,205,400,30]}
+{"kind":"textbox","id":"sh/fa9wjqh4","slide":3,"text":"• Patient details\n• Source date + series\n• Procedure information\n• Decision question\n• Material to analyse","textPreview":"• Patient details | • Source date + series | • Procedure information | • Decision question | • Material to analyse","textChars":106,"textLines":5,"bbox":[680,270,400,215]}
+{"kind":"shape","id":"sh/e90falgj","slide":3,"bbox":[68,676,1144,1]}
+{"kind":"textbox","id":"sh/1wrel0za","slide":3,"text":"AI Rx · Participant recap","textPreview":"AI Rx · Participant recap","textChars":25,"textLines":1,"bbox":[68,684,720,18]}
+{"kind":"textbox","id":"sh/gbixcvyp","slide":3,"text":"Workshop material · Not clinical advice","textPreview":"Workshop material · Not clinical advice","textChars":39,"textLines":1,"bbox":[900,684,312,18]}
+{"kind":"notes","id":"nt/dfwn80","slide":3,"text":"The library’s prompts are deliberately detailed. Read the full prompt in one view and keep its safeguards intact. Do not paste patient identifiers into unapproved systems.\n\n[Sources]\n- AI Rx Live Demo Studio, project-authored workshop framework\n[/Sources]"}
+{"kind":"slide","id":"sl/xclham","slide":4,"title":"RULE 3","textShapes":10}
+{"kind":"shape","id":"sh/zydc7ihs","slide":4,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/0zmdgnyd","slide":4,"text":"RULE 3","textPreview":"RULE 3","textChars":6,"textLines":1,"bbox":[68,54,620,20]}
+{"kind":"textbox","id":"sh/l0fu9szy","slide":4,"text":"Compare AI output with clinical judgment","textPreview":"Compare AI output with clinical judgment","textChars":40,"textLines":1,"bbox":[68,82,1030,70]}
+{"kind":"textbox","id":"sh/qt4badgb","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1130,51,80,38]}
+{"kind":"shape","id":"sh/budc3ihw","slide":4,"bbox":[68,178,510,330]}
+{"kind":"textbox","id":"sh/cvmdcny1","slide":4,"text":"AI perceived diagnosis","textPreview":"AI perceived diagnosis","textChars":22,"textLines":1,"bbox":[96,210,440,34]}
+{"kind":"textbox","id":"sh/dwvu5szm","slide":4,"text":"What pattern did the model recognise?\nWhat did it omit?\nHow confident did it sound?","textPreview":"What pattern did the model recognise? | What did it omit? | How confident did it sound?","textChars":83,"textLines":3,"bbox":[96,285,430,160]}
+{"kind":"shape","id":"sh/apovmxgf","slide":4,"bbox":[634,178,510,330]}
+{"kind":"textbox","id":"sh/vqxcf2x0","slide":4,"text":"Doctor’s actual diagnosis","textPreview":"Doctor’s actual diagnosis","textChars":25,"textLines":1,"bbox":[662,210,440,34]}
+{"kind":"textbox","id":"sh/bu5czitk","slide":4,"text":"Which trajectory or tacit cue changed the interpretation?\nWhat action follows?","textPreview":"Which trajectory or tacit cue changed the interpretation? | What action follows?","textChars":78,"textLines":2,"bbox":[662,285,430,160]}
+{"kind":"shape","id":"sh/qtwv6dsz","slide":4,"bbox":[420,550,440,32]}
+{"kind":"textbox","id":"sh/dw7u1sbq","slide":4,"text":"THE DIFFERENCE IS THE LEARNING","textPreview":"THE DIFFERENCE IS THE LEARNING","textChars":30,"textLines":1,"bbox":[432,556,416,20]}
+{"kind":"shape","id":"sh/cvyd8na5","slide":4,"bbox":[68,676,1144,1]}
+{"kind":"textbox","id":"sh/zypc3itg","slide":4,"text":"AI Rx · Participant recap","textPreview":"AI Rx · Participant recap","textChars":25,"textLines":1,"bbox":[68,684,720,18]}
+{"kind":"textbox","id":"sh/yxgvadsv","slide":4,"text":"Workshop material · Not clinical advice","textPreview":"Workshop material · Not clinical advice","textChars":39,"textLines":1,"bbox":[900,684,312,18]}
+{"kind":"notes","id":"nt/xclham","slide":4,"text":"The purpose of comparison is not to score the doctor against the model. It is to expose hidden assumptions and make tacit clinical knowledge teachable.\n\n[Sources]\n- AI Rx Live Demo Studio, project-authored workshop framework\n[/Sources]"}
+{"kind":"slide","id":"sl/8kpd4g","slide":5,"title":"RULE 4","textShapes":18}
+{"kind":"shape","id":"sh/qpo7u98j","slide":5,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/dsfqp4ra","slide":5,"text":"RULE 4","textPreview":"RULE 4","textChars":6,"textLines":1,"bbox":[68,54,620,20]}
+{"kind":"textbox","id":"sh/sr6pwzqp","slide":5,"text":"Run six checks before acting","textPreview":"Run six checks before acting","textChars":28,"textLines":1,"bbox":[68,82,1030,70]}
+{"kind":"textbox","id":"sh/32d8ju9s","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1130,51,80,38]}
+{"kind":"shape","id":"sh/i147qp8n","slide":5,"bbox":[68,178,350,145]}
+{"kind":"textbox","id":"sh/5ofql4ry","slide":5,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[88,196,38,30]}
+{"kind":"textbox","id":"sh/4nmpszqd","slide":5,"text":"Decision need","textPreview":"Decision need","textChars":13,"textLines":1,"bbox":[138,200,245,54]}
+{"kind":"shape","id":"sh/vyd8fa9w","slide":5,"bbox":[450,178,350,145]}
+{"kind":"textbox","id":"sh/ux47mp8b","slide":5,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[470,196,38,30]}
+{"kind":"textbox","id":"sh/grelsra1","slide":5,"text":"Data quality","textPreview":"Data quality","textChars":12,"textLines":1,"bbox":[520,200,245,54]}
+{"kind":"shape","id":"sh/hsnm1wb6","slide":5,"bbox":[832,178,350,145]}
+{"kind":"textbox","id":"sh/u5c3qhsv","slide":5,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[852,196,38,30]}
+{"kind":"textbox","id":"sh/f6l4zmtg","slide":5,"text":"Plausible options","textPreview":"Plausible options","textChars":17,"textLines":1,"bbox":[902,200,245,54]}
+{"kind":"shape","id":"sh/s3ulo7ap","slide":5,"bbox":[68,360,350,145]}
+{"kind":"textbox","id":"sh/t432xcba","slide":5,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[88,378,38,30]}
+{"kind":"textbox","id":"sh/61c3mxsj","slide":5,"text":"Uncertainty","textPreview":"Uncertainty","textChars":11,"textLines":1,"bbox":[138,382,245,54]}
+{"kind":"shape","id":"sh/72lkv2t4","slide":5,"bbox":[450,360,350,145]}
+{"kind":"textbox","id":"sh/czyl0bat","slide":5,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[470,378,38,30]}
+{"kind":"textbox","id":"sh/d07m9gbe","slide":5,"text":"Safe next action","textPreview":"Safe next action","textChars":16,"textLines":1,"bbox":[520,382,245,54]}
+{"kind":"shape","id":"sh/lg3mdwji","slide":5,"bbox":[832,360,350,145]}
+{"kind":"textbox","id":"sh/0fulkb2d","slide":5,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[852,378,38,30]}
+{"kind":"textbox","id":"sh/zelkb6ls","slide":5,"text":"Human ownership","textPreview":"Human ownership","textChars":15,"textLines":1,"bbox":[902,382,245,54]}
+{"kind":"shape","id":"sh/yds3i1k7","slide":5,"bbox":[416,560,448,32]}
+{"kind":"textbox","id":"sh/dcj29w3m","slide":5,"text":"IF OWNERSHIP IS UNCLEAR, DO NOT ACT","textPreview":"IF OWNERSHIP IS UNCLEAR, DO NOT ACT","textChars":35,"textLines":1,"bbox":[428,566,424,20]}
+{"kind":"shape","id":"sh/cbalgr21","slide":5,"bbox":[68,676,1144,1]}
+{"kind":"textbox","id":"sh/bq1k7mlg","slide":5,"text":"AI Rx · Participant recap","textPreview":"AI Rx · Participant recap","textChars":25,"textLines":1,"bbox":[68,684,720,18]}
+{"kind":"textbox","id":"sh/qps3ehkv","slide":5,"text":"Workshop material · Not clinical advice","textPreview":"Workshop material · Not clinical advice","textChars":39,"textLines":1,"bbox":[900,684,312,18]}
+{"kind":"notes","id":"nt/8kpd4g","slide":5,"text":"Use these six checks for documentation, research, diagnosis support and patient communication. The clinician remains accountable for validation and follow-up.\n\n[Sources]\n- AI Rx Live Demo Studio, project-authored workshop framework\n[/Sources]"}
+{"kind":"slide","id":"sl/w38u2t","slide":6,"title":"RULE 5","textShapes":8}
+{"kind":"shape","id":"sh/3etojit4","slide":6,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/4f25sna9","slide":6,"text":"RULE 5","textPreview":"RULE 5","textChars":6,"textLines":1,"bbox":[68,54,620,20]}
+{"kind":"textbox","id":"sh/pgb6lsbu","slide":6,"text":"Keep consent guidance light and safe","textPreview":"Keep consent guidance light and safe","textChars":36,"textLines":1,"bbox":[68,82,1030,70]}
+{"kind":"textbox","id":"sh/qh47udsf","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1130,51,80,38]}
+{"kind":"shape","id":"sh/bidonit0","slide":6,"bbox":[142,182,996,300]}
+{"kind":"textbox","id":"sh/cjmpwnal","slide":6,"text":"LITERATURE-ONLY","textPreview":"LITERATURE-ONLY","textChars":15,"textLines":1,"bbox":[180,220,920,30]}
+{"kind":"textbox","id":"sh/d4v6psb6","slide":6,"text":"Use published guidance and institution-approved templates. Do not upload patient identifiers, real consent records or case-specific legal material.","textPreview":"Use published guidance and institution-approved templates. Do not upload patient identifiers, real consent records or case-specific legal...","textChars":147,"textLines":1,"bbox":[205,290,870,118]}
+{"kind":"shape","id":"sh/y547yxsr","slide":6,"bbox":[318,535,644,32]}
+{"kind":"textbox","id":"sh/z6dor2tc","slide":6,"text":"SYNTHETIC CASES FOR TEACHING · LOCAL POLICY FOR PRACTICE","textPreview":"SYNTHETIC CASES FOR TEACHING · LOCAL POLICY FOR PRACTICE","textChars":56,"textLines":1,"bbox":[330,541,620,20]}
+{"kind":"shape","id":"sh/b2pwzidg","slide":6,"bbox":[68,676,1144,1]}
+{"kind":"textbox","id":"sh/q1gvqdcv","slide":6,"text":"AI Rx · Participant recap","textPreview":"AI Rx · Participant recap","textChars":25,"textLines":1,"bbox":[68,684,720,18]}
+{"kind":"textbox","id":"sh/d4re1sv6","slide":6,"text":"Workshop material · Not clinical advice","textPreview":"Workshop material · Not clinical advice","textChars":39,"textLines":1,"bbox":[900,684,312,18]}
+{"kind":"notes","id":"nt/w38u2t","slide":6,"text":"This slide is not legal advice. It reinforces the boundary between educational material and real patient consent processes.\n\n[Sources]\n- AI Rx Live Demo Studio, project-authored workshop framework\n[/Sources]"}
+{"kind":"slide","id":"sl/7wzyzo","slide":7,"title":"AI RX · CLINICAL PRACTICE & PATIENT CARE","textShapes":5}
+{"kind":"shape","id":"sh/pg7690by","slide":7,"bbox":[38,54,710,400]}
+{"kind":"textbox","id":"sh/ofypgvud","slide":7,"text":"AI RX · CLINICAL PRACTICE & PATIENT CARE","textPreview":"AI RX · CLINICAL PRACTICE & PATIENT CARE","textChars":40,"textLines":1,"bbox":[76,80,620,24]}
+{"kind":"textbox","id":"sh/bip8bqt4","slide":7,"text":"AI Rx","textPreview":"AI Rx","textChars":5,"textLines":1,"bbox":[74,232,400,78]}
+{"kind":"textbox","id":"sh/ahg7i5cj","slide":7,"text":"AI tools for clinical practice and patient care","textPreview":"AI tools for clinical practice and patient care","textChars":47,"textLines":1,"bbox":[78,332,660,42]}
+{"kind":"shape","id":"sh/x47qd0ba","slide":7,"bbox":[74,500,240,34]}
+{"kind":"textbox","id":"sh/c3ypkvup","slide":7,"text":"YOUR NEXT ACTION","textPreview":"YOUR NEXT ACTION","textChars":16,"textLines":1,"bbox":[88,508,212,18]}
+{"kind":"shape","id":"sh/rmloz6d0","slide":7,"bbox":[72,548,900,104]}
+{"kind":"textbox","id":"sh/qlc761cf","slide":7,"text":"Choose one specialty case. Copy one complete prompt. Compare one AI answer with a doctor’s judgment.","textPreview":"Choose one specialty case. Copy one complete prompt. Compare one AI answer with a doctor’s judgment.","textChars":100,"textLines":1,"bbox":[100,571,840,62]}
+{"kind":"image","id":"im/nqtofq14","slide":7,"name":"","alt":"AI Rx clinical workshop cover","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/7wzyzo","slide":7,"text":"Close with a small, testable action. Encourage participants to use synthetic data first and document what the model added, missed and left uncertain.\n\n[Sources]\n- AI Rx Live Demo Studio, project-authored workshop framework\n[/Sources]"}

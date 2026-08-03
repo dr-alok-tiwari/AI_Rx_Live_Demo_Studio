@@ -1,0 +1,802 @@
+[
+  {
+    "id": "sim-chest-x-ray-1",
+    "title": "Chest X-ray simulation 1",
+    "modality": "Chest X-ray",
+    "body_region": "Thorax",
+    "path": "assets/sample_medical_images/sim-chest-x-ray-1.png",
+    "alt_text": "Abstract educational simulation labelled Chest X-ray, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "54%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-chest-x-ray-2",
+    "title": "Chest X-ray simulation 2",
+    "modality": "Chest X-ray",
+    "body_region": "Thorax",
+    "path": "assets/sample_medical_images/sim-chest-x-ray-2.png",
+    "alt_text": "Abstract educational simulation labelled Chest X-ray, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "56%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-chest-x-ray-3",
+    "title": "Chest X-ray simulation 3",
+    "modality": "Chest X-ray",
+    "body_region": "Thorax",
+    "path": "assets/sample_medical_images/sim-chest-x-ray-3.png",
+    "alt_text": "Abstract educational simulation labelled Chest X-ray, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "58%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-chest-x-ray-4",
+    "title": "Chest X-ray simulation 4",
+    "modality": "Chest X-ray",
+    "body_region": "Thorax",
+    "path": "assets/sample_medical_images/sim-chest-x-ray-4.png",
+    "alt_text": "Abstract educational simulation labelled Chest X-ray, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "60%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-chest-x-ray-5",
+    "title": "Chest X-ray simulation 5",
+    "modality": "Chest X-ray",
+    "body_region": "Thorax",
+    "path": "assets/sample_medical_images/sim-chest-x-ray-5.png",
+    "alt_text": "Abstract educational simulation labelled Chest X-ray, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "62%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-brain-ct-1",
+    "title": "Brain CT simulation 1",
+    "modality": "Brain CT",
+    "body_region": "Head",
+    "path": "assets/sample_medical_images/sim-brain-ct-1.png",
+    "alt_text": "Abstract educational simulation labelled Brain CT, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "57%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-brain-ct-2",
+    "title": "Brain CT simulation 2",
+    "modality": "Brain CT",
+    "body_region": "Head",
+    "path": "assets/sample_medical_images/sim-brain-ct-2.png",
+    "alt_text": "Abstract educational simulation labelled Brain CT, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "59%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-brain-ct-3",
+    "title": "Brain CT simulation 3",
+    "modality": "Brain CT",
+    "body_region": "Head",
+    "path": "assets/sample_medical_images/sim-brain-ct-3.png",
+    "alt_text": "Abstract educational simulation labelled Brain CT, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "61%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-brain-ct-4",
+    "title": "Brain CT simulation 4",
+    "modality": "Brain CT",
+    "body_region": "Head",
+    "path": "assets/sample_medical_images/sim-brain-ct-4.png",
+    "alt_text": "Abstract educational simulation labelled Brain CT, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "63%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-brain-ct-5",
+    "title": "Brain CT simulation 5",
+    "modality": "Brain CT",
+    "body_region": "Head",
+    "path": "assets/sample_medical_images/sim-brain-ct-5.png",
+    "alt_text": "Abstract educational simulation labelled Brain CT, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "65%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-brain-mri-1",
+    "title": "Brain MRI simulation 1",
+    "modality": "Brain MRI",
+    "body_region": "Brain",
+    "path": "assets/sample_medical_images/sim-brain-mri-1.png",
+    "alt_text": "Abstract educational simulation labelled Brain MRI, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "60%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-brain-mri-2",
+    "title": "Brain MRI simulation 2",
+    "modality": "Brain MRI",
+    "body_region": "Brain",
+    "path": "assets/sample_medical_images/sim-brain-mri-2.png",
+    "alt_text": "Abstract educational simulation labelled Brain MRI, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "62%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-brain-mri-3",
+    "title": "Brain MRI simulation 3",
+    "modality": "Brain MRI",
+    "body_region": "Brain",
+    "path": "assets/sample_medical_images/sim-brain-mri-3.png",
+    "alt_text": "Abstract educational simulation labelled Brain MRI, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "64%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-brain-mri-4",
+    "title": "Brain MRI simulation 4",
+    "modality": "Brain MRI",
+    "body_region": "Brain",
+    "path": "assets/sample_medical_images/sim-brain-mri-4.png",
+    "alt_text": "Abstract educational simulation labelled Brain MRI, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "66%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-brain-mri-5",
+    "title": "Brain MRI simulation 5",
+    "modality": "Brain MRI",
+    "body_region": "Brain",
+    "path": "assets/sample_medical_images/sim-brain-mri-5.png",
+    "alt_text": "Abstract educational simulation labelled Brain MRI, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "68%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-skin-lesion-1",
+    "title": "Skin lesion simulation 1",
+    "modality": "Skin lesion",
+    "body_region": "Skin",
+    "path": "assets/sample_medical_images/sim-skin-lesion-1.png",
+    "alt_text": "Abstract educational simulation labelled Skin lesion, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "63%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-skin-lesion-2",
+    "title": "Skin lesion simulation 2",
+    "modality": "Skin lesion",
+    "body_region": "Skin",
+    "path": "assets/sample_medical_images/sim-skin-lesion-2.png",
+    "alt_text": "Abstract educational simulation labelled Skin lesion, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "65%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-skin-lesion-3",
+    "title": "Skin lesion simulation 3",
+    "modality": "Skin lesion",
+    "body_region": "Skin",
+    "path": "assets/sample_medical_images/sim-skin-lesion-3.png",
+    "alt_text": "Abstract educational simulation labelled Skin lesion, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "67%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-skin-lesion-4",
+    "title": "Skin lesion simulation 4",
+    "modality": "Skin lesion",
+    "body_region": "Skin",
+    "path": "assets/sample_medical_images/sim-skin-lesion-4.png",
+    "alt_text": "Abstract educational simulation labelled Skin lesion, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "69%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-skin-lesion-5",
+    "title": "Skin lesion simulation 5",
+    "modality": "Skin lesion",
+    "body_region": "Skin",
+    "path": "assets/sample_medical_images/sim-skin-lesion-5.png",
+    "alt_text": "Abstract educational simulation labelled Skin lesion, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "71%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-retinal-image-1",
+    "title": "Retinal image simulation 1",
+    "modality": "Retinal image",
+    "body_region": "Eye",
+    "path": "assets/sample_medical_images/sim-retinal-image-1.png",
+    "alt_text": "Abstract educational simulation labelled Retinal image, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "66%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-retinal-image-2",
+    "title": "Retinal image simulation 2",
+    "modality": "Retinal image",
+    "body_region": "Eye",
+    "path": "assets/sample_medical_images/sim-retinal-image-2.png",
+    "alt_text": "Abstract educational simulation labelled Retinal image, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "68%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-retinal-image-3",
+    "title": "Retinal image simulation 3",
+    "modality": "Retinal image",
+    "body_region": "Eye",
+    "path": "assets/sample_medical_images/sim-retinal-image-3.png",
+    "alt_text": "Abstract educational simulation labelled Retinal image, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "70%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-retinal-image-4",
+    "title": "Retinal image simulation 4",
+    "modality": "Retinal image",
+    "body_region": "Eye",
+    "path": "assets/sample_medical_images/sim-retinal-image-4.png",
+    "alt_text": "Abstract educational simulation labelled Retinal image, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "72%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-retinal-image-5",
+    "title": "Retinal image simulation 5",
+    "modality": "Retinal image",
+    "body_region": "Eye",
+    "path": "assets/sample_medical_images/sim-retinal-image-5.png",
+    "alt_text": "Abstract educational simulation labelled Retinal image, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "74%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-ecg-waveform-1",
+    "title": "ECG waveform simulation 1",
+    "modality": "ECG waveform",
+    "body_region": "Cardiac electrical signal",
+    "path": "assets/sample_medical_images/sim-ecg-waveform-1.png",
+    "alt_text": "Abstract educational simulation labelled ECG waveform, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "69%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-ecg-waveform-2",
+    "title": "ECG waveform simulation 2",
+    "modality": "ECG waveform",
+    "body_region": "Cardiac electrical signal",
+    "path": "assets/sample_medical_images/sim-ecg-waveform-2.png",
+    "alt_text": "Abstract educational simulation labelled ECG waveform, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "71%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-ecg-waveform-3",
+    "title": "ECG waveform simulation 3",
+    "modality": "ECG waveform",
+    "body_region": "Cardiac electrical signal",
+    "path": "assets/sample_medical_images/sim-ecg-waveform-3.png",
+    "alt_text": "Abstract educational simulation labelled ECG waveform, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "73%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-ecg-waveform-4",
+    "title": "ECG waveform simulation 4",
+    "modality": "ECG waveform",
+    "body_region": "Cardiac electrical signal",
+    "path": "assets/sample_medical_images/sim-ecg-waveform-4.png",
+    "alt_text": "Abstract educational simulation labelled ECG waveform, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "75%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-ecg-waveform-5",
+    "title": "ECG waveform simulation 5",
+    "modality": "ECG waveform",
+    "body_region": "Cardiac electrical signal",
+    "path": "assets/sample_medical_images/sim-ecg-waveform-5.png",
+    "alt_text": "Abstract educational simulation labelled ECG waveform, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "77%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-histopathology-slide-1",
+    "title": "Histopathology slide simulation 1",
+    "modality": "Histopathology slide",
+    "body_region": "Tissue",
+    "path": "assets/sample_medical_images/sim-histopathology-slide-1.png",
+    "alt_text": "Abstract educational simulation labelled Histopathology slide, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "72%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-histopathology-slide-2",
+    "title": "Histopathology slide simulation 2",
+    "modality": "Histopathology slide",
+    "body_region": "Tissue",
+    "path": "assets/sample_medical_images/sim-histopathology-slide-2.png",
+    "alt_text": "Abstract educational simulation labelled Histopathology slide, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "74%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-histopathology-slide-3",
+    "title": "Histopathology slide simulation 3",
+    "modality": "Histopathology slide",
+    "body_region": "Tissue",
+    "path": "assets/sample_medical_images/sim-histopathology-slide-3.png",
+    "alt_text": "Abstract educational simulation labelled Histopathology slide, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "76%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-histopathology-slide-4",
+    "title": "Histopathology slide simulation 4",
+    "modality": "Histopathology slide",
+    "body_region": "Tissue",
+    "path": "assets/sample_medical_images/sim-histopathology-slide-4.png",
+    "alt_text": "Abstract educational simulation labelled Histopathology slide, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "78%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-histopathology-slide-5",
+    "title": "Histopathology slide simulation 5",
+    "modality": "Histopathology slide",
+    "body_region": "Tissue",
+    "path": "assets/sample_medical_images/sim-histopathology-slide-5.png",
+    "alt_text": "Abstract educational simulation labelled Histopathology slide, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "80%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-ultrasound-image-1",
+    "title": "Ultrasound image simulation 1",
+    "modality": "Ultrasound image",
+    "body_region": "Selected organ or region",
+    "path": "assets/sample_medical_images/sim-ultrasound-image-1.png",
+    "alt_text": "Abstract educational simulation labelled Ultrasound image, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "75%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-ultrasound-image-2",
+    "title": "Ultrasound image simulation 2",
+    "modality": "Ultrasound image",
+    "body_region": "Selected organ or region",
+    "path": "assets/sample_medical_images/sim-ultrasound-image-2.png",
+    "alt_text": "Abstract educational simulation labelled Ultrasound image, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "77%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-ultrasound-image-3",
+    "title": "Ultrasound image simulation 3",
+    "modality": "Ultrasound image",
+    "body_region": "Selected organ or region",
+    "path": "assets/sample_medical_images/sim-ultrasound-image-3.png",
+    "alt_text": "Abstract educational simulation labelled Ultrasound image, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "79%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-ultrasound-image-4",
+    "title": "Ultrasound image simulation 4",
+    "modality": "Ultrasound image",
+    "body_region": "Selected organ or region",
+    "path": "assets/sample_medical_images/sim-ultrasound-image-4.png",
+    "alt_text": "Abstract educational simulation labelled Ultrasound image, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "81%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  },
+  {
+    "id": "sim-ultrasound-image-5",
+    "title": "Ultrasound image simulation 5",
+    "modality": "Ultrasound image",
+    "body_region": "Selected organ or region",
+    "path": "assets/sample_medical_images/sim-ultrasound-image-5.png",
+    "alt_text": "Abstract educational simulation labelled Ultrasound image, with a coloured illustrative region marker; not a diagnostic image.",
+    "quality_checklist": [
+      "Correct modality and body region",
+      "Orientation and coverage are adequate",
+      "Artefact and acquisition quality reviewed",
+      "Comparison material identified where relevant"
+    ],
+    "observation_task": "Describe only visible interface elements and image-quality considerations. Do not infer a diagnosis from this abstract placeholder.",
+    "illustrative_confidence": "83%",
+    "differential_considerations": "Not applicable to this abstract placeholder; in real use, a qualified clinician would integrate observations with history, examination, prior studies, and validated product scope.",
+    "ground_truth": "Not applicable — synthetic user-interface placeholder with no patient content.",
+    "limitations": "Not a medical image, not processed by a diagnostic model, and unsuitable for clinical interpretation.",
+    "licence": "Project-generated synthetic PNG; MIT project licence applies."
+  }
+]

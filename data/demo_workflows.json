@@ -1,0 +1,1440 @@
+[
+  {
+    "id": "freed-soap-note-and-patient-summary",
+    "tool_id": "freed",
+    "title": "Freed SOAP note and patient summary",
+    "category": "Clinical Documentation",
+    "duration_minutes": 10,
+    "level": "Beginner",
+    "problem": "Doctors spend excessive time converting patient conversations into structured documentation.",
+    "objective": "Demonstrate a supervised transcript-to-note workflow and detect unsupported additions.",
+    "preparation": [
+      "Open the official tool in a training account if available",
+      "Prepare the fictional transcript",
+      "Explain consent and local data rules"
+    ],
+    "synthetic_input": "Fictional consultation: Maya, age range 45–55, reports a dry cough for four days and mild fever yesterday. No chest pain or breathlessness. History includes controlled hypertension. Current medicine is listed only as 'one blood-pressure tablet'; drug and dose are unknown. Examination and vital signs were not supplied.",
+    "steps": [
+      "Explain consent and data-protection requirements before recording or transcription.",
+      "Use only the supplied fictional transcript; do not record workshop participants.",
+      "Select a SOAP-note template.",
+      "Generate a draft SOAP note.",
+      "Generate a patient-friendly summary with warning signs and when to contact a doctor.",
+      "Generate a referral or follow-up note without inventing examination findings.",
+      "Compare each statement with the transcript.",
+      "Highlight omissions, unsupported additions, and ambiguity around the medicine.",
+      "Complete the physician-verification checklist.",
+      "Discuss EHR transfer only as an approved institutional workflow."
+    ],
+    "sample_prompt": "Create a SOAP-note draft from this fictional transcript. Do not add examination findings, diagnoses, medicines, doses, tests, or plans that are absent. Put unknowns under 'Information to verify'. Then draft a patient summary at approximately Grade 7 reading level with warning signs and a 'not a prescription' notice. End with a clinician-verification checklist.",
+    "expected_output": "A structured draft note plus patient summary, with unknowns visible and no invented examination.",
+    "verification_points": [
+      "Every symptom and time point matches the transcript",
+      "Medicine name and dose remain unknown",
+      "No diagnosis or normal examination was fabricated",
+      "Escalation advice is reviewed by a clinician"
+    ],
+    "failure_modes": [
+      "Invented vital signs or normal examination",
+      "Unsupported diagnosis",
+      "Medication completion",
+      "Loss of uncertainty during simplification"
+    ],
+    "debrief_questions": [
+      "Which line was hardest to verify?",
+      "Would this draft change your clinical reasoning?",
+      "What must happen before EHR transfer?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "heidi-consultation-to-document-workflow",
+    "tool_id": "heidi",
+    "title": "Heidi consultation-to-document workflow",
+    "category": "Clinical Documentation",
+    "duration_minutes": 10,
+    "level": "Beginner",
+    "problem": "Clinicians need draft notes, follow-up documents, and patient summaries from the same consultation.",
+    "objective": "Compare multiple document types against one source transcript.",
+    "preparation": [
+      "Use a synthetic transcript",
+      "Choose local consent language",
+      "Prepare a note template"
+    ],
+    "synthetic_input": "Fictional follow-up: Arjun, age range 55–65, has home blood-pressure readings between 142–154/86–94 over one week. He reports missing tablets twice. No acute symptoms are stated. Medicine name, clinic reading, examination, and laboratory results are absent.",
+    "steps": [
+      "Explain consent and exclude real participant audio.",
+      "Paste the fictional consultation.",
+      "Choose a structured follow-up-note template.",
+      "Generate the note and preserve missing fields.",
+      "Create a patient-friendly adherence summary.",
+      "Draft a follow-up letter without changing the plan.",
+      "Compare all documents with the same source.",
+      "Mark contradictions, additions, and lost uncertainty.",
+      "Complete clinician review.",
+      "Discuss institutional approval before integration or storage."
+    ],
+    "sample_prompt": "Using only this fictional hypertension follow-up, draft a structured note, a plain-language patient summary, and a follow-up letter. Do not infer a diagnosis, treatment change, or normal examination. List missing information and end each output with a verification checklist.",
+    "expected_output": "Three source-consistent drafts with missing clinical information clearly labelled.",
+    "verification_points": [
+      "Readings and adherence details remain exact",
+      "No medicine or dose is inferred",
+      "No treatment change is proposed",
+      "The patient version remains understandable"
+    ],
+    "failure_modes": [
+      "Treating home readings as a confirmed clinic diagnosis",
+      "Inventing a treatment plan",
+      "Omitting missed doses",
+      "Failing to state red flags"
+    ],
+    "debrief_questions": [
+      "Which output needs the most clinical editing?",
+      "What consent is appropriate locally?",
+      "What should never be copied automatically?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "perplexity-pico-evidence-brief",
+    "tool_id": "perplexity",
+    "title": "Perplexity PICO evidence brief",
+    "category": "Research & Evidence",
+    "duration_minutes": 10,
+    "level": "Intermediate",
+    "problem": "A doctor needs a fast, source-linked orientation to a clinical or research question.",
+    "objective": "Move from PICO to a checked evidence brief without treating generated citations as verified.",
+    "preparation": [
+      "Prepare a fictional PICO question",
+      "Use date filters",
+      "Have two primary sources ready for inspection"
+    ],
+    "synthetic_input": "PICO: In adults with uncomplicated hypertension in primary care (P), does home blood-pressure monitoring with clinician feedback (I), compared with usual clinic monitoring (C), improve blood-pressure control and adherence (O)?",
+    "steps": [
+      "Convert the question into PICO form.",
+      "Search for recent guidelines, systematic reviews, and trials.",
+      "Separate evidence by publication type.",
+      "Inspect every cited source title and date.",
+      "Open at least two primary sources.",
+      "Record population, setting, and outcome definitions.",
+      "Identify disagreement and unresolved uncertainty.",
+      "Draft a short evidence brief.",
+      "Check that citations support each statement.",
+      "State that the brief is orientation, not patient-specific advice."
+    ],
+    "sample_prompt": "Answer the PICO question using recent source-linked evidence. Separate guidelines, systematic reviews, and primary trials. For each claim, provide the source and publication date. State population differences, limitations, and unresolved uncertainty. Do not invent citations.",
+    "expected_output": "A dated, source-linked orientation with evidence types separated and uncertainties visible.",
+    "verification_points": [
+      "Sources exist and titles match",
+      "Claims are supported by opened sources",
+      "Population and setting are relevant",
+      "Recency is not confused with quality"
+    ],
+    "failure_modes": [
+      "Fabricated or misattributed citations",
+      "Reliance on summaries without opening papers",
+      "Mixing commentary with primary evidence",
+      "Overgeneralising populations"
+    ],
+    "debrief_questions": [
+      "Which citation changed your interpretation?",
+      "What evidence type was missing?",
+      "What would you verify before clinical use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "notebooklm-journal-club-synthesis",
+    "tool_id": "notebooklm",
+    "title": "NotebookLM journal-club synthesis",
+    "category": "Research & Evidence",
+    "duration_minutes": 15,
+    "level": "Intermediate",
+    "problem": "Doctors have several papers but limited time to prepare a journal club.",
+    "objective": "Create a source-grounded comparison while checking every statement against authorised papers.",
+    "preparation": [
+      "Use openly shareable or authorised papers",
+      "Label each source",
+      "Prepare appraisal questions"
+    ],
+    "synthetic_input": "Authorised source pack: three fictional study summaries on home blood-pressure monitoring, each with different populations, follow-up periods, and outcome definitions.",
+    "steps": [
+      "Upload only authorised or openly shareable papers.",
+      "Request a study-by-study summary.",
+      "Extract population, intervention, comparator, outcomes, and limitations.",
+      "Generate a comparison table.",
+      "Identify disagreements across studies.",
+      "Create journal-club questions.",
+      "Generate a presentation outline or audio overview if available.",
+      "Verify all statements against the uploaded documents.",
+      "Record missing information rather than filling gaps.",
+      "Close with an applicability discussion."
+    ],
+    "sample_prompt": "Using only the uploaded sources, create a table with design, population, intervention, comparator, outcomes, follow-up, risk of bias, and limitations. Cite the source name for every row. Identify disagreements without resolving them unless the source does. Draft six journal-club questions.",
+    "expected_output": "A source-labelled comparison table, disagreement map, and journal-club discussion guide.",
+    "verification_points": [
+      "Every cell traces to an uploaded document",
+      "Study designs are classified correctly",
+      "Absence of evidence is not described as no effect",
+      "Limitations remain study-specific"
+    ],
+    "failure_modes": [
+      "Blending results across sources",
+      "Inventing missing methods",
+      "Treating source-grounded output as clinically correct",
+      "Losing contradictory findings"
+    ],
+    "debrief_questions": [
+      "Where did the studies genuinely disagree?",
+      "What information remained missing?",
+      "Would an audio overview be sufficient for appraisal?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "monday-com-clinic-quality-improvement-board",
+    "tool_id": "monday-com",
+    "title": "monday.com clinic quality-improvement board",
+    "category": "Workflow & Knowledge",
+    "duration_minutes": 10,
+    "level": "Beginner",
+    "problem": "Clinical teams manage audits, CME work, referrals, or research tasks through scattered emails and spreadsheets.",
+    "objective": "Build a synthetic, non-clinical quality-improvement tracker with owners, deadlines, and escalation.",
+    "preparation": [
+      "Open a training workspace",
+      "Use the synthetic QI template",
+      "Exclude patient-level records"
+    ],
+    "synthetic_input": "Synthetic project: improve completion of a monthly equipment safety checklist across three clinic rooms. Roles are department lead, nursing lead, and biomedical support. No patient data are involved.",
+    "steps": [
+      "Select the synthetic clinic quality-improvement template.",
+      "Create stages for planning, test, review, and close-out.",
+      "Add responsibilities, deadlines, and status fields.",
+      "Create checklist-completion and blocker columns.",
+      "Add a non-clinical overdue reminder.",
+      "Build a dashboard for pending actions.",
+      "Demonstrate escalation for overdue work.",
+      "Check that the board contains no identifiers or patient-level data.",
+      "Discuss access control and audit expectations.",
+      "Export a workshop plan."
+    ],
+    "sample_prompt": "Create a board specification for a monthly equipment-safety checklist project. Include stages, owners, due dates, status, evidence link, blocker, and escalation. Use only fictional operational data and no patient records.",
+    "expected_output": "A visible work board with clear ownership, overdue actions, and no patient data.",
+    "verification_points": [
+      "Every task has an owner and due date",
+      "Automation is administrative, not clinical",
+      "No patient-level field exists",
+      "Escalation remains human-owned"
+    ],
+    "failure_modes": [
+      "Adding patient names to referral tracking",
+      "Automating clinical decisions",
+      "No exception owner",
+      "Dashboard without source tasks"
+    ],
+    "debrief_questions": [
+      "Which status field would support audit?",
+      "Where does human override sit?",
+      "What data should remain outside the board?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "xtiles-specialty-knowledge-hub",
+    "tool_id": "xtiles",
+    "title": "xTiles specialty knowledge hub",
+    "category": "Workflow & Knowledge",
+    "duration_minutes": 10,
+    "level": "Beginner",
+    "problem": "Doctors need one visual workspace for protocols, reading lists, ideas, tasks, and teaching material.",
+    "objective": "Build a fictional specialty knowledge hub without patient-identifiable records.",
+    "preparation": [
+      "Open a blank workspace",
+      "Prepare public guideline links",
+      "Use fictional task examples"
+    ],
+    "synthetic_input": "Synthetic General Medicine hub with sections for guidelines, papers to read, teaching cases, protocol checklists, and weekly tasks.",
+    "steps": [
+      "Create a visual Specialty Knowledge Hub.",
+      "Add tiles for guidelines, papers, cases, teaching, and tasks.",
+      "Build a weekly learning dashboard.",
+      "Add a protocol checklist.",
+      "Link each guideline to its official source.",
+      "Use fictional teaching cases only.",
+      "Show how the topic can be organised spatially.",
+      "Review sharing permissions.",
+      "Exclude patient-identifiable records.",
+      "Export a screenshot or plan for workshop debrief."
+    ],
+    "sample_prompt": "Design a visual General Medicine knowledge hub with tiles for current guidelines, reading queue, fictional teaching cases, protocol checklist, and weekly learning tasks. Include source and review-date fields. Exclude patient data.",
+    "expected_output": "A navigable visual hub with source dates, review status, and clear separation of knowledge from patient records.",
+    "verification_points": [
+      "Guidelines have sources and review dates",
+      "Tasks are distinct from patient work",
+      "Sharing permissions are explicit",
+      "Cases are fictional"
+    ],
+    "failure_modes": [
+      "Outdated guidance without review date",
+      "Patient screenshots in teaching tiles",
+      "Unclear ownership",
+      "Mixing draft notes with approved protocols"
+    ],
+    "debrief_questions": [
+      "What belongs in a knowledge hub?",
+      "How will outdated guidance be flagged?",
+      "Which content needs restricted access?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "plain-language-diagnosis-explanation",
+    "tool_id": "chatgpt",
+    "title": "Plain-language diagnosis explanation",
+    "category": "Patient Communication",
+    "duration_minutes": 5,
+    "level": "Intermediate",
+    "problem": "Clinical explanations may be too technical, long, or poorly matched to a patient’s language and health-literacy level.",
+    "objective": "Demonstrate drafts plain-language explanations, checklists, and educational material from safe input. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for plain-language diagnosis explanation. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Remove identifiers",
+      "State audience and reading level",
+      "Provide only verified facts",
+      "Request observation–inference separation",
+      "Generate the draft",
+      "Check warnings and escalation",
+      "Review translation and tone",
+      "Approve final patient material"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Plain-language diagnosis explanation. State the intended audience and intended use.",
+    "expected_output": "A reviewable plain-language diagnosis explanation draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "multilingual-discharge-instruction-draft",
+    "tool_id": "google-gemini",
+    "title": "Multilingual discharge-instruction draft",
+    "category": "Patient Communication",
+    "duration_minutes": 10,
+    "level": "Advanced",
+    "problem": "Clinical explanations may be too technical, long, or poorly matched to a patient’s language and health-literacy level.",
+    "objective": "Demonstrate drafts multilingual and audience-adjusted educational material for review. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for multilingual discharge-instruction draft. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Remove identifiers",
+      "State audience and reading level",
+      "Provide only verified facts",
+      "Request observation–inference separation",
+      "Generate the draft",
+      "Check warnings and escalation",
+      "Review translation and tone",
+      "Approve final patient material"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Multilingual discharge-instruction draft. State the intended audience and intended use.",
+    "expected_output": "A reviewable multilingual discharge-instruction draft draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "visual-patient-handout",
+    "tool_id": "canva",
+    "title": "Visual patient handout",
+    "category": "Presentations & Teaching",
+    "duration_minutes": 15,
+    "level": "Beginner",
+    "problem": "Doctors need clear teaching and patient-education material but may have limited design time.",
+    "objective": "Demonstrate designs patient handouts, professional posts, infographics, and teaching slides. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for visual patient handout. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Define audience and objective",
+      "Provide verified source material",
+      "Generate an outline",
+      "Limit slide density",
+      "Add citations",
+      "Check accessibility",
+      "Run a clinical accuracy review",
+      "Rehearse the activity"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Visual patient handout. State the intended audience and intended use.",
+    "expected_output": "A reviewable visual patient handout draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "evidence-extraction-matrix",
+    "tool_id": "elicit",
+    "title": "Evidence extraction matrix",
+    "category": "Research & Evidence",
+    "duration_minutes": 3,
+    "level": "Intermediate",
+    "problem": "Clinicians and researchers need a fast but traceable way to orient themselves to a question or source collection.",
+    "objective": "Demonstrate supports literature discovery and structured evidence extraction. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for evidence extraction matrix. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Frame the question",
+      "Set date and population limits",
+      "Run the search or source-grounded query",
+      "Classify evidence types",
+      "Open primary sources",
+      "Record populations and dates",
+      "Log uncertainty",
+      "Write a checked brief"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Evidence extraction matrix. State the intended audience and intended use.",
+    "expected_output": "A reviewable evidence extraction matrix draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "citation-context-audit",
+    "tool_id": "scite",
+    "title": "Citation-context audit",
+    "category": "Research & Evidence",
+    "duration_minutes": 5,
+    "level": "Advanced",
+    "problem": "Clinicians and researchers need a fast but traceable way to orient themselves to a question or source collection.",
+    "objective": "Demonstrate shows how papers have been cited to support citation-context review. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for citation-context audit. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Frame the question",
+      "Set date and population limits",
+      "Run the search or source-grounded query",
+      "Classify evidence types",
+      "Open primary sources",
+      "Record populations and dates",
+      "Log uncertainty",
+      "Write a checked brief"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Citation-context audit. State the intended audience and intended use.",
+    "expected_output": "A reviewable citation-context audit draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "literature-discovery-map",
+    "tool_id": "researchrabbit",
+    "title": "Literature discovery map",
+    "category": "Research & Evidence",
+    "duration_minutes": 10,
+    "level": "Beginner",
+    "problem": "Clinicians and researchers need a fast but traceable way to orient themselves to a question or source collection.",
+    "objective": "Demonstrate maps related papers and authors to broaden a literature search. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for literature discovery map. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Frame the question",
+      "Set date and population limits",
+      "Run the search or source-grounded query",
+      "Classify evidence types",
+      "Open primary sources",
+      "Record populations and dates",
+      "Log uncertainty",
+      "Write a checked brief"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Literature discovery map. State the intended audience and intended use.",
+    "expected_output": "A reviewable literature discovery map draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "reference-library-setup",
+    "tool_id": "zotero",
+    "title": "Reference-library setup",
+    "category": "Research & Evidence",
+    "duration_minutes": 15,
+    "level": "Intermediate",
+    "problem": "Clinicians and researchers need a fast but traceable way to orient themselves to a question or source collection.",
+    "objective": "Demonstrate collects, organises, cites, and shares research sources. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for reference-library setup. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Frame the question",
+      "Set date and population limits",
+      "Run the search or source-grounded query",
+      "Classify evidence types",
+      "Open primary sources",
+      "Record populations and dates",
+      "Log uncertainty",
+      "Write a checked brief"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Reference-library setup. State the intended audience and intended use.",
+    "expected_output": "A reviewable reference-library setup draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "seven-day-professional-content-plan",
+    "tool_id": "buffer",
+    "title": "Seven-day professional content plan",
+    "category": "Professional Engagement",
+    "duration_minutes": 3,
+    "level": "Advanced",
+    "problem": "A doctor wants a useful professional presence without disclosing patient information or making promotional clinical claims.",
+    "objective": "Demonstrate plans, schedules, and reviews professional social-media content. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for seven-day professional content plan. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Choose audience and platform",
+      "Use an evidence-based topic",
+      "Draft three angles",
+      "Add source links",
+      "Screen clinical claims",
+      "Check consent and conflicts",
+      "Create a visual brief",
+      "Approve before scheduling"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Seven-day professional content plan. State the intended audience and intended use.",
+    "expected_output": "A reviewable seven-day professional content plan draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "ethical-linkedin-post",
+    "tool_id": "taplio",
+    "title": "Ethical LinkedIn post",
+    "category": "Professional Engagement",
+    "duration_minutes": 5,
+    "level": "Beginner",
+    "problem": "A doctor wants a useful professional presence without disclosing patient information or making promotional clinical claims.",
+    "objective": "Demonstrate supports linkedin content planning and publishing. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for ethical linkedin post. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Choose audience and platform",
+      "Use an evidence-based topic",
+      "Draft three angles",
+      "Add source links",
+      "Screen clinical claims",
+      "Check consent and conflicts",
+      "Create a visual brief",
+      "Approve before scheduling"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Ethical LinkedIn post. State the intended audience and intended use.",
+    "expected_output": "A reviewable ethical linkedin post draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "ten-slide-cme-draft",
+    "tool_id": "gamma",
+    "title": "Ten-slide CME draft",
+    "category": "Presentations & Teaching",
+    "duration_minutes": 10,
+    "level": "Intermediate",
+    "problem": "Doctors need clear teaching and patient-education material but may have limited design time.",
+    "objective": "Demonstrate creates a first-pass presentation or visual document from a reviewed outline. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for ten-slide cme draft. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Define audience and objective",
+      "Provide verified source material",
+      "Generate an outline",
+      "Limit slide density",
+      "Add citations",
+      "Check accessibility",
+      "Run a clinical accuracy review",
+      "Rehearse the activity"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Ten-slide CME draft. State the intended audience and intended use.",
+    "expected_output": "A reviewable ten-slide cme draft draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "live-clinical-teaching-poll",
+    "tool_id": "mentimeter",
+    "title": "Live clinical teaching poll",
+    "category": "Presentations & Teaching",
+    "duration_minutes": 15,
+    "level": "Advanced",
+    "problem": "Doctors need clear teaching and patient-education material but may have limited design time.",
+    "objective": "Demonstrate runs live polls, word clouds, and audience questions. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for live clinical teaching poll. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Define audience and objective",
+      "Provide verified source material",
+      "Generate an outline",
+      "Limit slide density",
+      "Add citations",
+      "Check accessibility",
+      "Run a clinical accuracy review",
+      "Rehearse the activity"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Live clinical teaching poll. State the intended audience and intended use.",
+    "expected_output": "A reviewable live clinical teaching poll draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "radiology-ai-product-fit-walkthrough",
+    "tool_id": "qure-ai-qxr-qer",
+    "title": "Radiology AI product-fit walkthrough",
+    "category": "Precision Diagnostics",
+    "duration_minutes": 3,
+    "level": "Beginner",
+    "problem": "Clinicians need to understand where a medical AI product fits in an imaging or biosignal workflow without assuming public access or universal approval.",
+    "objective": "Demonstrate supports specified chest x-ray and head ct analysis or triage workflows, depending on product and indication. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for radiology ai product-fit walkthrough. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Confirm intended use",
+      "Verify exact product and indication",
+      "Check image or signal quality",
+      "Run only in an approved environment",
+      "Review visual or numerical output",
+      "Assess false-positive and false-negative risk",
+      "Integrate clinical context",
+      "Document qualified review"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Radiology AI product-fit walkthrough. State the intended audience and intended use.",
+    "expected_output": "A reviewable radiology ai product-fit walkthrough draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "ecg-decision-support-awareness",
+    "tool_id": "alivecor-kardia",
+    "title": "ECG decision-support awareness",
+    "category": "Precision Diagnostics",
+    "duration_minutes": 5,
+    "level": "Intermediate",
+    "problem": "Clinicians need to understand where a medical AI product fits in an imaging or biosignal workflow without assuming public access or universal approval.",
+    "objective": "Demonstrate records personal ecgs through compatible kardia devices and associated services. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for ecg decision-support awareness. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Confirm intended use",
+      "Verify exact product and indication",
+      "Check image or signal quality",
+      "Run only in an approved environment",
+      "Review visual or numerical output",
+      "Assess false-positive and false-negative risk",
+      "Integrate clinical context",
+      "Document qualified review"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: ECG decision-support awareness. State the intended audience and intended use.",
+    "expected_output": "A reviewable ecg decision-support awareness draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "ultrasound-guidance-awareness",
+    "tool_id": "ge-healthcare-caption-ai-vscan-air-sl",
+    "title": "Ultrasound guidance awareness",
+    "category": "Precision Diagnostics",
+    "duration_minutes": 10,
+    "level": "Advanced",
+    "problem": "Clinicians need to understand where a medical AI product fits in an imaging or biosignal workflow without assuming public access or universal approval.",
+    "objective": "Demonstrate represents the current ge healthcare product path for caption ai-guided cardiac image acquisition. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for ultrasound guidance awareness. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Confirm intended use",
+      "Verify exact product and indication",
+      "Check image or signal quality",
+      "Run only in an approved environment",
+      "Review visual or numerical output",
+      "Assess false-positive and false-negative risk",
+      "Integrate clinical context",
+      "Document qualified review"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Ultrasound guidance awareness. State the intended audience and intended use.",
+    "expected_output": "A reviewable ultrasound guidance awareness draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "dermatology-image-workflow-awareness",
+    "tool_id": "dermengine",
+    "title": "Dermatology image-workflow awareness",
+    "category": "Precision Diagnostics",
+    "duration_minutes": 15,
+    "level": "Beginner",
+    "problem": "Clinicians need to understand where a medical AI product fits in an imaging or biosignal workflow without assuming public access or universal approval.",
+    "objective": "Demonstrate provides a dermatology imaging, documentation, and analytics platform. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for dermatology image-workflow awareness. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Confirm intended use",
+      "Verify exact product and indication",
+      "Check image or signal quality",
+      "Run only in an approved environment",
+      "Review visual or numerical output",
+      "Assess false-positive and false-negative risk",
+      "Integrate clinical context",
+      "Document qualified review"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Dermatology image-workflow awareness. State the intended audience and intended use.",
+    "expected_output": "A reviewable dermatology image-workflow awareness draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "research-study-tracker",
+    "tool_id": "clickup",
+    "title": "Research-study tracker",
+    "category": "Workflow & Knowledge",
+    "duration_minutes": 3,
+    "level": "Intermediate",
+    "problem": "Departmental, education, audit, and research work is often fragmented across email, spreadsheets, and personal notes.",
+    "objective": "Demonstrate tracks tasks, projects, documents, responsibilities, and status. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for research-study tracker. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Choose a non-clinical template",
+      "Define stages",
+      "Assign roles",
+      "Set deadlines",
+      "Add status fields",
+      "Create a dashboard",
+      "Review overdue escalation",
+      "Check that no PHI is stored"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Research-study tracker. State the intended audience and intended use.",
+    "expected_output": "A reviewable research-study tracker draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "protocol-knowledge-base",
+    "tool_id": "notion",
+    "title": "Protocol knowledge base",
+    "category": "Workflow & Knowledge",
+    "duration_minutes": 5,
+    "level": "Advanced",
+    "problem": "Departmental, education, audit, and research work is often fragmented across email, spreadsheets, and personal notes.",
+    "objective": "Demonstrate combines notes, databases, projects, and knowledge pages in one workspace. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for protocol knowledge base. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Choose a non-clinical template",
+      "Define stages",
+      "Assign roles",
+      "Set deadlines",
+      "Add status fields",
+      "Create a dashboard",
+      "Review overdue escalation",
+      "Check that no PHI is stored"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Protocol knowledge base. State the intended audience and intended use.",
+    "expected_output": "A reviewable protocol knowledge base draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "department-action-tracker",
+    "tool_id": "microsoft-365-copilot",
+    "title": "Department action tracker",
+    "category": "Administrative Productivity",
+    "duration_minutes": 10,
+    "level": "Beginner",
+    "problem": "Administrative follow-up, meeting actions, forms, and routine communication consume time and are vulnerable to fragmented ownership.",
+    "objective": "Demonstrate supports productivity and content work inside eligible microsoft 365 environments. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for department action tracker. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Select a non-clinical task",
+      "Remove patient data",
+      "Map human owners",
+      "Draft the workflow",
+      "Add approval steps",
+      "Test with synthetic data",
+      "Review exceptions",
+      "Monitor the live process"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Department action tracker. State the intended audience and intended use.",
+    "expected_output": "A reviewable department action tracker draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "non-clinical-workflow-automation",
+    "tool_id": "zapier",
+    "title": "Non-clinical workflow automation",
+    "category": "Administrative Productivity",
+    "duration_minutes": 15,
+    "level": "Intermediate",
+    "problem": "Administrative follow-up, meeting actions, forms, and routine communication consume time and are vulnerable to fragmented ownership.",
+    "objective": "Demonstrate connects non-clinical apps and automates approved administrative handoffs. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for non-clinical workflow automation. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Select a non-clinical task",
+      "Remove patient data",
+      "Map human owners",
+      "Draft the workflow",
+      "Add approval steps",
+      "Test with synthetic data",
+      "Review exceptions",
+      "Monitor the live process"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Non-clinical workflow automation. State the intended audience and intended use.",
+    "expected_output": "A reviewable non-clinical workflow automation draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "cme-registration-form",
+    "tool_id": "jotform",
+    "title": "CME registration form",
+    "category": "Administrative Productivity",
+    "duration_minutes": 3,
+    "level": "Advanced",
+    "problem": "Administrative follow-up, meeting actions, forms, and routine communication consume time and are vulnerable to fragmented ownership.",
+    "objective": "Demonstrate builds forms and simple workflows for approved non-clinical data collection. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for cme registration form. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Select a non-clinical task",
+      "Remove patient data",
+      "Map human owners",
+      "Draft the workflow",
+      "Add approval steps",
+      "Test with synthetic data",
+      "Review exceptions",
+      "Monitor the live process"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: CME registration form. State the intended audience and intended use.",
+    "expected_output": "A reviewable cme registration form draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "referral-summary-verification",
+    "tool_id": "heidi",
+    "title": "Referral-summary verification",
+    "category": "Clinical Documentation",
+    "duration_minutes": 5,
+    "level": "Beginner",
+    "problem": "Clinicians need to convert conversations or dictation into structured documentation without adding unsupported facts.",
+    "objective": "Demonstrate drafts notes, letters, and summaries from a consultation transcript. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for referral-summary verification. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Confirm consent and data policy",
+      "Use the synthetic transcript",
+      "Select a note template",
+      "Generate the draft",
+      "Compare with the transcript",
+      "Flag omissions and additions",
+      "Complete clinician review",
+      "Discuss approved EHR transfer"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Referral-summary verification. State the intended audience and intended use.",
+    "expected_output": "A reviewable referral-summary verification draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "two-scribe-note-comparison",
+    "tool_id": "freed",
+    "title": "Two-scribe note comparison",
+    "category": "Clinical Documentation",
+    "duration_minutes": 10,
+    "level": "Intermediate",
+    "problem": "Clinicians need to convert conversations or dictation into structured documentation without adding unsupported facts.",
+    "objective": "Demonstrate drafts structured clinical notes from clinician–patient conversations. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for two-scribe note comparison. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Confirm consent and data policy",
+      "Use the synthetic transcript",
+      "Select a note template",
+      "Generate the draft",
+      "Compare with the transcript",
+      "Flag omissions and additions",
+      "Complete clinician review",
+      "Discuss approved EHR transfer"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Two-scribe note comparison. State the intended audience and intended use.",
+    "expected_output": "A reviewable two-scribe note comparison draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "systematic-review-screening-setup",
+    "tool_id": "rayyan",
+    "title": "Systematic-review screening setup",
+    "category": "Research & Evidence",
+    "duration_minutes": 15,
+    "level": "Advanced",
+    "problem": "Clinicians and researchers need a fast but traceable way to orient themselves to a question or source collection.",
+    "objective": "Demonstrate supports screening and collaboration in systematic-review workflows. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for systematic-review screening setup. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Frame the question",
+      "Set date and population limits",
+      "Run the search or source-grounded query",
+      "Classify evidence types",
+      "Open primary sources",
+      "Record populations and dates",
+      "Log uncertainty",
+      "Write a checked brief"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Systematic-review screening setup. State the intended audience and intended use.",
+    "expected_output": "A reviewable systematic-review screening setup draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "interactive-risk-identification-quiz",
+    "tool_id": "kahoot",
+    "title": "Interactive risk-identification quiz",
+    "category": "Presentations & Teaching",
+    "duration_minutes": 3,
+    "level": "Beginner",
+    "problem": "Doctors need clear teaching and patient-education material but may have limited design time.",
+    "objective": "Demonstrate runs game-based formative assessments and review activities. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for interactive risk-identification quiz. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Define audience and objective",
+      "Provide verified source material",
+      "Generate an outline",
+      "Limit slide density",
+      "Add citations",
+      "Check accessibility",
+      "Run a clinical accuracy review",
+      "Rehearse the activity"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Interactive risk-identification quiz. State the intended audience and intended use.",
+    "expected_output": "A reviewable interactive risk-identification quiz draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  },
+  {
+    "id": "responsible-ai-five-step-gate",
+    "tool_id": "chatgpt",
+    "title": "Responsible-AI five-step gate",
+    "category": "Patient Communication",
+    "duration_minutes": 5,
+    "level": "Intermediate",
+    "problem": "Clinical explanations may be too technical, long, or poorly matched to a patient’s language and health-literacy level.",
+    "objective": "Demonstrate drafts plain-language explanations, checklists, and educational material from safe input. while preserving source fidelity and human review.",
+    "preparation": [
+      "Open the official tool or local simulation",
+      "Prepare synthetic input",
+      "Review institutional and consent requirements"
+    ],
+    "synthetic_input": "Fictional workshop material for responsible-ai five-step gate. No real patient identity, image, report, or confidential institutional data is included.",
+    "steps": [
+      "Remove identifiers",
+      "State audience and reading level",
+      "Provide only verified facts",
+      "Request observation–inference separation",
+      "Generate the draft",
+      "Check warnings and escalation",
+      "Review translation and tone",
+      "Approve final patient material"
+    ],
+    "sample_prompt": "Use only the fictional information below. Do not invent facts. State missing information, separate observation from inference, identify uncertainty, and end with a clinician-verification checklist. Task: Responsible-AI five-step gate. State the intended audience and intended use.",
+    "expected_output": "A reviewable responsible-ai five-step gate draft with sources, unknowns, and responsibility for final approval visible.",
+    "verification_points": [
+      "Input is safe and authorised",
+      "Material facts trace to the source",
+      "Uncertainty remains visible",
+      "A qualified person owns final approval"
+    ],
+    "failure_modes": [
+      "Invented detail",
+      "Loss of uncertainty",
+      "Unverified citation or claim",
+      "Automation without an accountable reviewer"
+    ],
+    "debrief_questions": [
+      "What did the tool save?",
+      "What required expert correction?",
+      "What policy must be checked before routine use?"
+    ],
+    "safety_notice": "Synthetic input only; qualified review required."
+  }
+]

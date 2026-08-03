@@ -1,0 +1,1 @@
+"""AI Rx shared components."""

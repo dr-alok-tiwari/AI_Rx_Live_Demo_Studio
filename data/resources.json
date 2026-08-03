@@ -1,0 +1,278 @@
+{
+  "problem_routes": {
+    "My clinical notes take too long.": [
+      "documentation",
+      "scribe",
+      "note"
+    ],
+    "I need to explain a diagnosis to a patient.": [
+      "patient",
+      "plain-language",
+      "communication"
+    ],
+    "I need evidence for a clinical question.": [
+      "research",
+      "evidence",
+      "literature"
+    ],
+    "I need to prepare a journal-club presentation.": [
+      "journal",
+      "presentation",
+      "research"
+    ],
+    "I need a professional LinkedIn post.": [
+      "professional",
+      "social",
+      "LinkedIn"
+    ],
+    "I need to organise clinic protocols.": [
+      "workflow",
+      "knowledge",
+      "protocol"
+    ],
+    "I want to understand AI-assisted image analysis.": [
+      "imaging",
+      "radiology",
+      "diagnostic"
+    ],
+    "I need to create patient education material.": [
+      "patient",
+      "education",
+      "handout"
+    ]
+  },
+  "recommended_sequences": {
+    "30": [
+      "ChatGPT",
+      "Perplexity",
+      "Heidi"
+    ],
+    "60": [
+      "ChatGPT",
+      "Freed",
+      "Perplexity",
+      "NotebookLM",
+      "Canva",
+      "Buffer"
+    ],
+    "90": [
+      "Freed",
+      "Perplexity",
+      "NotebookLM",
+      "monday.com",
+      "Canva",
+      "Qure.ai qXR/qER",
+      "Mentimeter"
+    ]
+  },
+  "patient_centricity_flow": [
+    "Patient need",
+    "Specialty context",
+    "Evidence",
+    "Decision support",
+    "Doctor judgement",
+    "Patient-centred action"
+  ],
+  "literature_only_consent": "Use fictional, published, de-identified, openly licensed, or otherwise authorised teaching material. Obtain any consent and institutional clearance required for real-world material outside this app. This workshop does not create, replace, or interpret a clinical consent form.",
+  "audience_marketing": {
+    "Doctors": {
+      "headline": "Spend workshop time on clinical judgement, not prompt engineering.",
+      "copy": "Practise copy-ready prompts, specialty cases, source checking, and AI-versus-doctor review using fictional data.",
+      "cta": "Join the hands-on AI Rx session for doctors.",
+      "platform_post": "AI can draft and organise. The doctor still decides. AI Rx gives physicians copy-ready prompts, specialty-specific fictional cases, and structured AI-versus-doctor debriefs anchored in patient safety."
+    },
+    "Hospital leaders": {
+      "headline": "Move from scattered experimentation to governed clinical decision support.",
+      "copy": "Use the workshop to examine privacy, accountability, evidence, workflow ownership, exceptions, and measurable patient-service impact.",
+      "cta": "Bring a clinical, IT, quality, and governance team.",
+      "platform_post": "AI adoption in hospitals needs more than a tool demonstration. AI Rx connects use cases with data boundaries, qualified review, human override, audit trails, and patient-centred measures."
+    },
+    "Researchers": {
+      "headline": "Use AI to accelerate evidence work without outsourcing critical appraisal.",
+      "copy": "Build PICO questions, literature searches, evidence tables, and journal-club discussions while checking every citation and inference.",
+      "cta": "Bring one authorised paper set and one research question.",
+      "platform_post": "Source-grounded is not the same as scientifically correct. AI Rx trains researchers to use AI for discovery and synthesis while retaining transparent methods, source verification, and uncertainty."
+    },
+    "Medical educators": {
+      "headline": "Teach where AI stops and professional reasoning begins.",
+      "copy": "Use staged cases, copy-ready prompts, AI-versus-doctor comparisons, polls, and reflection to make tacit clinical reasoning discussable.",
+      "cta": "Adapt the specialty cases for your learner level.",
+      "platform_post": "The useful teaching moment is not a perfect AI answer. It is the gap between the AI draft and the clinician's judgement. AI Rx turns that gap into a structured debrief."
+    },
+    "Pharma and life sciences": {
+      "headline": "Communicate evidence clearly while preserving medical, regulatory, and audience boundaries.",
+      "copy": "Practise literature synthesis, audience-specific education, content review, and disclosure without turning workshop material into promotional clinical advice.",
+      "cta": "Use the research and communication labs with approved sources.",
+      "platform_post": "AI Rx helps medical and life-sciences teams convert authorised evidence into reviewable educational drafts, with source checks, audience fit, disclosure, and human approval built into the workflow."
+    }
+  },
+  "ethics_topics": [
+    {
+      "title": "Patient confidentiality",
+      "description": "Use data minimisation, approved environments, role-based access, and explicit policy. De-identification reduces but may not remove risk."
+    },
+    {
+      "title": "Consent",
+      "description": "Explain what the tool does, what data it receives, choices available, and what happens after processing."
+    },
+    {
+      "title": "Hallucination",
+      "description": "Compare material outputs with the source and treat unsupported details as safety failures, not stylistic errors."
+    },
+    {
+      "title": "Automation bias",
+      "description": "Design review steps that make disagreement, uncertainty, and escalation visible before action."
+    },
+    {
+      "title": "Population bias",
+      "description": "Check evidence in the intended population, prevalence, equipment, language, setting, and workflow."
+    },
+    {
+      "title": "Explainability",
+      "description": "Users need enough information to understand intended output, limits, and appropriate response. A heatmap alone is not an explanation."
+    },
+    {
+      "title": "Source verification",
+      "description": "Open cited material and check that each claim matches the source, population, date, and evidence type."
+    },
+    {
+      "title": "Copyright",
+      "description": "Use authorised or openly licensed documents, images, and media. Format conversion does not change rights."
+    },
+    {
+      "title": "Institutional policy",
+      "description": "Local approval, procurement, information security, legal review, clinical governance, and audit requirements still apply."
+    },
+    {
+      "title": "Medical-device regulation",
+      "description": "Verify the exact product, version, intended use, indication, geography, and current listing. Do not generalise from company-level claims."
+    },
+    {
+      "title": "Clinical accountability",
+      "description": "A qualified professional owns review and final use. AI generation does not transfer responsibility."
+    },
+    {
+      "title": "Audit trails and override",
+      "description": "Record material inputs, versions, reviews, changes, exceptions, and who authorised the final action."
+    }
+  ],
+  "facilitator": {
+    "name": "Dr. Alok Tiwari",
+    "role": "Assistant Professor, Big Data Analytics",
+    "institution": "Goa Institute of Management, Goa",
+    "tagline": "Building responsible AI for healthcare, education and decision science",
+    "summary": "Dr. Alok Tiwari brings biomedical engineering, responsible AI and management education together to turn rigorous technical work into practical decisions.",
+    "bio": "Dr. Alok Tiwari is an Assistant Professor in Big Data Analytics at Goa Institute of Management. With a PhD in Biomedical Engineering from IIT (BHU), Varanasi, he connects responsible AI system design, clinical decision support, medical imaging research and management education. His work is grounded in a simple aim: help learners and practitioners move from technical possibility to informed, accountable action.",
+    "focus_statement": "Healthcare AI · Explainable AI · MLOps",
+    "principle": "Engineering depth. Human purpose.",
+    "education": [
+      {
+        "mark": "PhD",
+        "degree": "Biomedical Engineering",
+        "institution": "IIT (BHU), Varanasi",
+        "focus": "Transfer learning · Cardiac MRI · COVID-19 AI"
+      },
+      {
+        "mark": "MTech",
+        "degree": "Biomedical Engineering",
+        "institution": "NIT Kurukshetra",
+        "focus": "Signal processing · Medical imaging"
+      },
+      {
+        "mark": "BTech",
+        "degree": "Electronics & Communication",
+        "institution": "GBTU, Lucknow",
+        "focus": "ECE foundations · Digital systems"
+      }
+    ],
+    "expertise": [
+      "Healthcare AI",
+      "Medical imaging",
+      "Explainable & responsible AI",
+      "Clinical decision support",
+      "Machine learning",
+      "Computer vision",
+      "MLOps",
+      "Generative AI",
+      "Management analytics",
+      "Faculty development"
+    ],
+    "research_areas": [
+      {
+        "icon": "🫁",
+        "title": "Medical Image Analysis",
+        "description": "Deep learning for MRI, chest X-ray and clinical imaging, including cardiac segmentation and respiratory disease detection.",
+        "tags": ["CNN", "U-Net", "ResNet"]
+      },
+      {
+        "icon": "🔍",
+        "title": "Explainable & Ethical AI",
+        "description": "Transparent and robust AI systems designed around trust, accountability and fairness for clinicians and managers.",
+        "tags": ["XAI", "LIME", "SHAP"]
+      },
+      {
+        "icon": "📈",
+        "title": "Applied Data Science",
+        "description": "Statistical learning and AI workflows for healthcare, business and policy questions where decisions have consequences.",
+        "tags": ["Python", "Statistics", "Analytics"]
+      },
+      {
+        "icon": "🧑‍🏫",
+        "title": "Pedagogy & Learning Innovation",
+        "description": "Generative AI and analytics-enabled approaches for learning design, faculty development and management education.",
+        "tags": ["GenAI", "EdTech", "FDPs"]
+      },
+      {
+        "icon": "🏭",
+        "title": "Industry-Oriented Analytics",
+        "description": "Executive and practitioner learning that turns analytics theory into organisational decision value.",
+        "tags": ["MDPs", "BI tools", "SQL"]
+      },
+      {
+        "icon": "⚙️",
+        "title": "Production-Ready AI Workflows",
+        "description": "Cloud, reproducibility, CI/CD and MLOps practices that carry data science work from notebook to deployment.",
+        "tags": ["Docker", "MLflow", "Cloud"]
+      }
+    ],
+    "experience": [
+      {
+        "period": "2024 – Present",
+        "role": "Assistant Professor, Big Data Analytics",
+        "organisation": "Goa Institute of Management, Goa",
+        "description": "Teaches healthcare analytics, MLOps, logical reasoning, sports analytics and emerging technology modules, alongside faculty and executive development."
+      },
+      {
+        "period": "2023",
+        "role": "Assistant Professor",
+        "organisation": "ATLAS SkillTech University, Mumbai",
+        "description": "Taught statistics, calculus and industrial analytics, while contributing to curriculum design and student mentoring."
+      },
+      {
+        "period": "2022 – 2023",
+        "role": "Faculty, Data Engineering & AI",
+        "organisation": "uGDX / INSOFE, Hyderabad",
+        "description": "Delivered applied learning in Python, SQL, machine learning, computer vision, cloud workflows, DevOps and big data tools."
+      },
+      {
+        "period": "2015 – 2021",
+        "role": "PhD Research, Biomedical Engineering",
+        "organisation": "IIT (BHU), Varanasi",
+        "description": "Researched transfer learning for COVID-19 chest X-ray classification and weakly supervised cardiac MRI segmentation."
+      }
+    ],
+    "teaching_summary": "Audience-specific courses, executive development, faculty programmes and applied AI experiences across management, healthcare, engineering, research and data engineering.",
+    "teaching_areas": ["Healthcare Analytics", "MLOps", "Data Visualization", "Sports Analytics", "Intelligent Research", "Machine Learning", "Deep Learning", "NLP", "Python & R", "Executive GenAI"],
+    "teaching_philosophy": "Every technical concept taught to a manager should arrive with a decision they can make.",
+    "collaboration": "Open to research collaboration, invited talks, faculty opportunities, executive programme design and applied AI consulting.",
+    "portfolio_url": "https://dr-alok-tiwari.github.io/",
+    "profile_image_url": "https://dr-alok-tiwari.github.io/assets/img/prof_pic.jpg",
+    "linkedin": "https://www.linkedin.com/in/dr-alok-tiwari/",
+    "github": "https://github.com/dr-alok-tiwari",
+    "orcid": "https://orcid.org/0000-0003-3605-8565",
+    "email": "shodhkarta.alok@gmail.com",
+    "profile_last_checked": "2026-08-03",
+    "institution_logo": "",
+    "partner_logo": ""
+  }
+}
