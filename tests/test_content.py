@@ -1,4 +1,5 @@
 from pathlib import Path
+from io import BytesIO
 import json
 import math
 import re
@@ -6,12 +7,23 @@ import sys
 import textwrap
 import unittest
 
+from pypdf import PdfReader
+
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from components.data import load_cases, load_prompts, load_quiz, load_workflows
 from components.navigation import PAGES
+from components.sample_reports import (
+    attachment_ready_prompt,
+    build_prompt_sample_pdf,
+    build_workflow_sample_pdf,
+    complete_workflow_copy_package,
+    prompt_pdf_filename,
+    workflow_attachment_prompt,
+    workflow_pdf_filename,
+)
 
 
 class ContentTests(unittest.TestCase):
@@ -29,6 +41,49 @@ class ContentTests(unittest.TestCase):
             self.assertIn("AI VERSUS DOCTOR CHECK", item["prompt"])
             self.assertIn("FINAL SAFETY BLOCK", item["prompt"])
             self.assertTrue(item["print_ready"])
+
+    def test_every_prompt_combination_has_a_complete_pdf_attachment(self):
+        filenames = set()
+        for item in load_prompts():
+            filename = prompt_pdf_filename(item)
+            prompt = attachment_ready_prompt(item)
+            pdf = build_prompt_sample_pdf(item)
+            reader = PdfReader(BytesIO(pdf))
+            text = "\n".join(page.extract_text() or "" for page in reader.pages)
+
+            self.assertNotIn("[PASTE FICTIONAL", prompt)
+            self.assertNotIn("INFORMATION I WILL PROVIDE", prompt)
+            self.assertNotRegex(prompt, r"\[[^\]]+\]")
+            self.assertIn("ATTACHMENT TO UPLOAD WITH THIS PROMPT", prompt)
+            self.assertIn(filename, prompt)
+            self.assertTrue(pdf.startswith(b"%PDF-"))
+            self.assertGreater(len(pdf), 4_000)
+            self.assertGreaterEqual(len(reader.pages), 2)
+            self.assertIn(item["category"], text)
+            self.assertIn(item["specialty"], text)
+            self.assertIn("Qualified-review checklist", text)
+            filenames.add(filename)
+        self.assertEqual(len(filenames), len(load_prompts()))
+
+    def test_every_live_workflow_has_pdf_prompt_and_one_click_package(self):
+        filenames = set()
+        for workflow in load_workflows():
+            filename = workflow_pdf_filename(workflow)
+            prompt = workflow_attachment_prompt(workflow)
+            package = complete_workflow_copy_package(workflow)
+            pdf = build_workflow_sample_pdf(workflow)
+            reader = PdfReader(BytesIO(pdf))
+            text = "\n".join(page.extract_text() or "" for page in reader.pages)
+
+            self.assertIn(filename, prompt)
+            self.assertIn("AI RX COMPLETE LIVE-DEMO PACKAGE", package)
+            self.assertIn("SYNTHETIC INPUT", package)
+            self.assertIn("PROMPT TO SUBMIT", package)
+            self.assertIn("VERIFICATION POINTS", package)
+            self.assertTrue(pdf.startswith(b"%PDF-"))
+            self.assertIn(workflow["title"], text)
+            filenames.add(filename)
+        self.assertEqual(len(filenames), len(load_workflows()))
 
     def test_detailed_prompts_fit_the_three_column_desktop_budget(self):
         for item in load_prompts():
@@ -86,6 +141,8 @@ class ContentTests(unittest.TestCase):
         self.assertIn('[data-testid="stCodeBlock"]', css)
         self.assertIn("max-height: none !important", css)
         self.assertIn("overflow: visible !important", css)
+        demo_component = (ROOT / "components" / "demo_renderer.py").read_text(encoding="utf-8")
+        self.assertIn("Copy complete live-demo package for ChatGPT / lab", demo_component)
 
     def test_developer_profile_is_complete(self):
         resources = json.loads((ROOT / "data" / "resources.json").read_text(encoding="utf-8"))
