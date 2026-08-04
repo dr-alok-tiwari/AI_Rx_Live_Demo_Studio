@@ -30,6 +30,51 @@ def _render_chunk(chunk: str) -> str:
     )
 
 
+def render_copy_button(
+    content: str,
+    *,
+    button_label: str,
+    success_label: str,
+    key_prefix: str,
+) -> None:
+    """Copy an exact payload with a browser-compatible fallback."""
+    payload = json.dumps(content, ensure_ascii=False).replace("</", "<\\/")
+    initial_label = f"{button_label} · {len(content):,} characters"
+    st.iframe(
+        f"""
+        <!doctype html><html><head><meta charset='utf-8'><style>
+          body {{ margin: 0; font-family: Aptos, 'Segoe UI', sans-serif; background: transparent; }}
+          button {{ width: 100%; min-height: 42px; color: #07151c; font-weight: 800;
+            background: linear-gradient(120deg, #fbbf24, #f59e0b); border: 0; border-radius: 11px;
+            cursor: pointer; box-shadow: 0 8px 22px rgba(245,158,11,.18); }}
+          button:focus {{ outline: 3px solid #2dd4bf; outline-offset: 2px; }}
+          button.done {{ color: #05251f; background: linear-gradient(120deg, #6ee7b7, #2dd4bf); }}
+          textarea {{ position: fixed; left: -9999px; top: -9999px; }}
+        </style></head><body>
+          <button id='copy' type='button' data-copy-key='{escape(key_prefix)}'>{escape(initial_label)}</button>
+          <textarea id='source' aria-hidden='true'></textarea>
+          <script>
+            const exactContent = {payload};
+            const button = document.getElementById('copy');
+            async function copyContent() {{
+              try {{ await navigator.clipboard.writeText(exactContent); }}
+              catch (error) {{
+                const source = document.getElementById('source');
+                source.value = exactContent; source.focus(); source.select();
+                document.execCommand('copy');
+              }}
+              button.textContent = {json.dumps(success_label, ensure_ascii=False)}; button.classList.add('done');
+              setTimeout(() => {{ button.textContent = {json.dumps(initial_label, ensure_ascii=False)}; button.classList.remove('done'); }}, 1800);
+            }}
+            button.addEventListener('click', copyContent);
+          </script>
+        </body></html>
+        """,
+        width="stretch",
+        height=48,
+    )
+
+
 def render_prompt_sheet(prompt: str, *, label: str, key_prefix: str) -> None:
     """Show the exact prompt as a balanced desktop sheet plus a copy source."""
     words = len(prompt.split())
@@ -47,37 +92,9 @@ def render_prompt_sheet(prompt: str, *, label: str, key_prefix: str) -> None:
         """,
         unsafe_allow_html=True,
     )
-    payload = json.dumps(prompt, ensure_ascii=False).replace("</", "<\\/")
-    st.iframe(
-        f"""
-        <!doctype html><html><head><meta charset='utf-8'><style>
-          body {{ margin: 0; font-family: Aptos, 'Segoe UI', sans-serif; background: transparent; }}
-          button {{ width: 100%; min-height: 42px; color: #07151c; font-weight: 800;
-            background: linear-gradient(120deg, #fbbf24, #f59e0b); border: 0; border-radius: 11px;
-            cursor: pointer; box-shadow: 0 8px 22px rgba(245,158,11,.18); }}
-          button:focus {{ outline: 3px solid #2dd4bf; outline-offset: 2px; }}
-          button.done {{ color: #05251f; background: linear-gradient(120deg, #6ee7b7, #2dd4bf); }}
-          textarea {{ position: fixed; left: -9999px; top: -9999px; }}
-        </style></head><body>
-          <button id='copy' type='button' data-prompt-key='{escape(key_prefix)}'>Copy entire prompt · {len(prompt):,} characters</button>
-          <textarea id='source' aria-hidden='true'></textarea>
-          <script>
-            const exactPrompt = {payload};
-            const button = document.getElementById('copy');
-            async function copyPrompt() {{
-              try {{ await navigator.clipboard.writeText(exactPrompt); }}
-              catch (error) {{
-                const source = document.getElementById('source');
-                source.value = exactPrompt; source.focus(); source.select();
-                document.execCommand('copy');
-              }}
-              button.textContent = 'Entire prompt copied'; button.classList.add('done');
-              setTimeout(() => {{ button.textContent = 'Copy entire prompt · {len(prompt):,} characters'; button.classList.remove('done'); }}, 1800);
-            }}
-            button.addEventListener('click', copyPrompt);
-          </script>
-        </body></html>
-        """,
-        width="stretch",
-        height=48,
+    render_copy_button(
+        prompt,
+        button_label="Copy entire prompt",
+        success_label="Entire prompt copied",
+        key_prefix=key_prefix,
     )

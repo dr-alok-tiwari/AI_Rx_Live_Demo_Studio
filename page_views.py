@@ -38,6 +38,7 @@ from components.filters import directory_filters
 from components.nudges import text_nudge
 from components.prompt_sheet import render_prompt_sheet
 from components.quiz import badge_for_score, render_questions
+from components.sample_reports import attachment_ready_prompt, build_prompt_sample_pdf, prompt_pdf_filename
 from components.safety import render_safety_gate, social_media_flags
 from components.ui import configure_page, footer, metric_cards, page_header, safety_notice
 
@@ -354,11 +355,24 @@ def render_prompt_library() -> None:
         f"<div class='prompt-meta'>{escape(item['use_case'])}</div></div>",
         unsafe_allow_html=True,
     )
-    render_prompt_sheet(item["prompt"], label=item["title"], key_prefix=f"library_{item['id']}")
-    st.caption("The complete prompt is balanced across columns for one-view reading. Replace the square-bracket fields and keep the safety and verification instructions intact.")
+    attachment_prompt = attachment_ready_prompt(item)
+    sample_filename = prompt_pdf_filename(item)
+    st.markdown("#### Matching sample PDF attachment")
+    st.write("This fictional report is unique to the selected specialty-task combination and supplies every input field used by the prompt. Download it, attach it in ChatGPT, and then copy the full prompt below.")
+    st.download_button(
+        "1 · Download sample PDF to upload",
+        build_prompt_sample_pdf(item),
+        file_name=sample_filename,
+        mime="application/pdf",
+        key=f"sample_pdf_{item['id']}",
+        type="primary",
+        width="stretch",
+    )
+    render_prompt_sheet(attachment_prompt, label=item["title"], key_prefix=f"library_{item['id']}")
+    st.caption(f"The prompt names {sample_filename} and uses that attachment as its complete fictional source. No square-bracket fields need to be replaced.")
     st.markdown("### 3. Use or save for the session")
     actions = st.columns(4)
-    actions[0].download_button("Download this prompt", item["prompt"], f"{item['id']}.txt", "text/plain", key=f"prompt_{item['id']}", width="stretch")
+    actions[0].download_button("Download this prompt", attachment_prompt, f"{item['id']}.txt", "text/plain", key=f"prompt_{item['id']}", width="stretch")
     packed = item["id"] in st.session_state["prompt_pack"]
     if actions[1].button("Remove from session" if packed else "Add to session pack", key=f"pack_{item['id']}", width="stretch"):
         if packed:
@@ -366,14 +380,14 @@ def render_prompt_library() -> None:
         else:
             st.session_state["prompt_pack"].append(item["id"])
         st.rerun()
-    filtered_text = "\n\n".join(f"{entry['title']}\n{'='*88}\n{entry['prompt']}" for entry in filtered)
+    filtered_text = "\n\n".join(f"{entry['title']}\n{'='*88}\n{attachment_ready_prompt(entry)}" for entry in filtered)
     actions[2].download_button("Download filtered set", filtered_text, "AI_Rx_Filtered_Prompts.txt", "text/plain", width="stretch")
     booklet = ROOT / "assets" / "handouts" / "AI_Rx_Copy_Ready_Prompt_Booklet.html"
     if booklet.exists():
         actions[3].download_button("Download print booklet", booklet.read_bytes(), booklet.name, "text/html", width="stretch")
     if st.session_state["prompt_pack"]:
         packed_prompts = [entry for entry in prompts if entry["id"] in st.session_state["prompt_pack"]]
-        pack_text = "\n\n".join(f"{entry['title']}\n{'='*88}\n{entry['prompt']}" for entry in packed_prompts)
+        pack_text = "\n\n".join(f"{entry['title']}\n{'='*88}\n{attachment_ready_prompt(entry)}" for entry in packed_prompts)
         st.markdown(f"<div class='decision-box'><strong>Session prompt pack</strong><br>{len(packed_prompts)} selected prompts, ready to share with participants.</div>", unsafe_allow_html=True)
         pack_actions = st.columns([1, 1, 2])
         pack_actions[0].download_button("Download session pack", pack_text, "AI_Rx_Session_Prompt_Pack.txt", "text/plain", width="stretch")

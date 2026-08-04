@@ -10,7 +10,7 @@ The app treats AI as a supervised junior colleague. It can organise information,
 
 - 101 dated tool records with official links, access notes, pricing cautions, PHI warnings, and product-status fields
 - 31 complete demonstration workflows, including detailed modules for Freed, Heidi, Perplexity, NotebookLM, monday.com, and xTiles
-- 323 detailed, copy-ready prompts: 17 tasks across 19 specialty lenses. The selected prompt is fully expanded on the page, with no collapsed panel, inner scroll area, drag, or zoom requirement
+- 323 detailed, copy-ready prompts: 17 tasks across 19 specialty lenses. Every combination generates a uniquely named, complete fictional PDF attachment, and the displayed prompt refers to that PDF instead of fill-in placeholders
 - a print-ready prompt booklet in HTML and text formats for soft-copy sharing or hard-copy distribution
 - 19 fictional, specialty-structured cases presented as ready prompt → simulated AI output → AI perceived diagnosis → doctor’s actual diagnosis → tacit knowledge → patient-centred action
 - 120 assessment questions with answers and explanations
@@ -19,6 +19,7 @@ The app treats AI as a supervised junior colleague. It can organise information,
 - an animated publicity asset, audience-specific invitation copy, a 13-slide facilitator deck, and a 7-slide participant recap deck
 - task-based, grouped navigation; progressive case reveals; a session prompt pack; and an interactive decision-readiness checklist
 - one-view desktop prompt sheets with exact copy sources, predefined input nudges, labelled nearest alternatives, and guaranteed assessment length
+- one-click live-demo packages that copy the problem, objective, synthetic input, steps, attachment-ready prompt, expected output, verification checks, failure modes, and debrief questions for ChatGPT or practical labs
 
 The simulation images are abstract PNG interface assets. They are not medical images and were not processed by a diagnostic model.
 
@@ -53,7 +54,7 @@ Do not put a real password in source control. `.env.example` shows the variable 
 ## Recommended workshop flow
 
 1. Open **Home** and frame the patient-centred path: patient need → specialty → evidence → AI support → doctor judgment → patient action.
-2. Open **Prompt Library**, select a specialty and task, then copy the fully visible prompt. Replace only the patient and source fields.
+2. Open **Prompt Library**, select a specialty and task, download the matching fictional PDF, attach it in ChatGPT, and copy the fully visible attachment-ready prompt.
 3. Open **AI vs Doctor Cases**. Read the date, patient information, procedure and series before revealing the AI output.
 4. Compare the AI’s perceived diagnosis with the doctor’s actual diagnosis. Ask which tacit cue or trajectory changed the decision.
 5. Use **Decision Support** to apply the six checks: need, data, options, uncertainty, action, and ownership.

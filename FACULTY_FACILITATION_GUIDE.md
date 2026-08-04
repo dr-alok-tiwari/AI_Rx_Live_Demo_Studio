@@ -42,7 +42,7 @@ State the operating principle at the start: patient first, doctor led, AI assist
 ## 90-minute clinical decision lab
 
 - 10 minutes: patient need, boundaries, and decision question
-- 15 minutes: copy a complete specialty prompt; replace only the patient and source fields
+- 15 minutes: download the matching fictional PDF, attach it in ChatGPT, and copy the complete specialty prompt
 - 25 minutes: ready prompt → AI output → AI perceived diagnosis versus doctor’s actual diagnosis
 - 15 minutes: apply the six decision-support checks
 - 15 minutes: transfer the same structure to small specialty groups
@@ -52,7 +52,7 @@ State the operating principle at the start: patient first, doctor led, AI assist
 
 1. Name the patient need and the decision before naming the product.
 2. Show the document date, patient information, procedure information, and series or trajectory.
-3. Open the complete prompt in **Prompt Library**. Keep it fully visible; do not collapse the safety clauses. Replace only the marked fields.
+3. Open the complete prompt in **Prompt Library**. Download its uniquely named fictional PDF, attach the PDF in ChatGPT, and copy the full attachment-ready prompt without altering the safety clauses.
 4. Read the privacy checkpoint aloud, then generate or simulate the output.
 5. Ask one participant to state the AI’s perceived diagnosis and cite the evidence it used.
 6. Reveal the doctor’s actual diagnosis. Ask which tacit cue, missing context, or change over time altered the interpretation.
