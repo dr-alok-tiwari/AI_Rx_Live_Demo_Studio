@@ -2,7 +2,7 @@
 
 If you are unsure what to enter, use a predefined nudge beside the input field. You can edit the loaded text before using it.
 
-Detailed prompts appear as a balanced one-view sheet on desktop. Use **Copy entire prompt** to copy the full source in one action, or download the prompt as a text file. On a narrow screen, the sheet becomes a single readable column.
+Detailed prompts appear as a balanced one-view sheet on desktop. First download the matching fictional PDF and attach it in ChatGPT. Then use **Copy entire prompt** to copy the attachment-ready instruction in one action, or download it as a text file. On a narrow screen, the sheet becomes a single readable column.
 
 AI Rx Live Demo Studio is a teaching environment. It shows how AI can assist with drafts, research orientation, communication, teaching, and workflow design while a healthcare professional remains responsible for the result. The practical rule is simple: patient first, doctor led, AI assisted.
 
@@ -21,7 +21,8 @@ For every task, ask six questions:
 
 ## Three useful starting points
 
-- **Prompt Library:** choose the task and specialty, read the complete prompt in one view, copy it, and replace only the marked patient and source fields.
+- **Prompt Library:** choose the task and specialty, download the uniquely named sample PDF, attach it in ChatGPT, and copy the complete prompt. The PDF replaces the old fill-in placeholders.
+- **Live demonstrations and practice labs:** download the matching PDF, then use **Copy complete live-demo package for ChatGPT / lab** to copy the problem, synthetic input, steps, prompt, checks, and debrief material together.
 - **AI vs Doctor Cases:** read the date, patient, procedure, and series information before the AI output. Then compare the AI’s perceived diagnosis with the doctor’s actual diagnosis.
 - **Decision Support:** use the six checks before accepting or acting on an output.
 
