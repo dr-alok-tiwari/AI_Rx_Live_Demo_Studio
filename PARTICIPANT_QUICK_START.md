@@ -38,4 +38,4 @@ The eight modality groups contain abstract interface placeholders. They are not 
 
 Choose one specialty case. Copy one complete prompt. Compare one AI answer with a doctor’s judgment. Write down what the model added, what it missed, what remained uncertain, and what patient-centred action a clinician should consider next.
 
-The print-ready prompt booklet and participant recap deck are available from **Publicity & PPTs**.
+The print-ready prompt booklet, participant recap deck, and programme flyer are available from **Resource centre**. When the session ends, open **Session feedback**, scan the authorised QR code, and do not enter patient-identifiable or confidential information.

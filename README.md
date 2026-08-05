@@ -16,10 +16,12 @@ The app treats AI as a supervised junior colleague. It can organise information,
 - 120 assessment questions with answers and explanations
 - 40 labelled diagnostic-interface simulations: five each for chest X-ray, brain CT, brain MRI, skin lesion, retinal image, ECG waveform, histopathology, and ultrasound
 - a six-check decision-support framework, tool comparison, no-dead-end filtering, workshop planning, quiz badges, ethical social-media screening, a five-step safety gate, and a local catalogue editor
-- an animated publicity asset, audience-specific invitation copy, a 13-slide facilitator deck, and a 7-slide participant recap deck
+- KS Publication Pathway branding, an animated publicity asset, audience-specific invitation copy, an A4 and social programme flyer, a 13-slide facilitator deck, and a 7-slide participant recap deck
 - task-based, grouped navigation; progressive case reveals; a session prompt pack; and an interactive decision-readiness checklist
 - one-view desktop prompt sheets with exact copy sources, predefined input nudges, labelled nearest alternatives, and guaranteed assessment length
 - one-click live-demo packages that copy the problem, objective, synthetic input, steps, attachment-ready prompt, expected output, verification checks, failure modes, and debrief questions for ChatGPT or practical labs
+- a final Session Feedback page with the authorised QR code, direct-link fallback, download option, and privacy reminder
+- an affiliation-neutral Developer Expertise page limited to expertise, research and teaching focus, and education
 
 The simulation images are abstract PNG interface assets. They are not medical images and were not processed by a diagnostic model.
 
@@ -59,7 +61,8 @@ Do not put a real password in source control. `.env.example` shows the variable 
 4. Compare the AI’s perceived diagnosis with the doctor’s actual diagnosis. Ask which tacit cue or trajectory changed the decision.
 5. Use **Decision Support** to apply the six checks: need, data, options, uncertainty, action, and ownership.
 6. Use the relevant lab, then close with **Assessment** and one patient-centred action.
-7. Open **Publicity & PPTs** for the facilitator deck, participant recap, print-ready prompt booklet, animated publicity, and audience-specific copy.
+7. Open **Resource centre** for the facilitator deck, participant recap, print-ready prompt booklet, animated publicity, audience-specific copy, and programme flyers.
+8. End on **Session feedback** and scan the authorised QR code. Do not enter patient-identifiable or confidential information.
 
 Detailed delivery notes are in `FACULTY_FACILITATION_GUIDE.md`. Participants can use `PARTICIPANT_QUICK_START.md`.
 
@@ -86,6 +89,14 @@ python scripts/build_content.py
 
 This command replaces the generated JSON and PNG seed assets. Do not use it after hand-editing those files unless you intend to regenerate them.
 
+To rebuild the branded A4 PNG, A4 PDF, social portrait, and cropped logo derivative:
+
+```bash
+python scripts/build_flyer.py
+```
+
+The flyer script uses the committed text-free hero image and typesets all programme copy in code. The supplied session-feedback QR is kept separate from registration publicity.
+
 ## Verification
 
 Run the local checks:
@@ -110,7 +121,7 @@ Tests cover catalogue schema, unique IDs, search and filtering, fallback recomme
 3. In Streamlit Community Cloud, create an app from the repository and select `app.py` as the entry point.
 4. In Advanced settings, choose a supported Python version. Streamlit’s current deployment documentation lists Python 3.12 as the default at the catalogue verification date, but this can change.
 5. Add `FACILITATOR_PASSWORD` through the platform’s secret or environment configuration if the facilitator areas should be restricted.
-6. Deploy, open every page, run one filter with no exact match, open one local simulation image, and test an external-link button.
+6. Deploy, open every page, run one filter with no exact match, open one local simulation image, test the flyer downloads, and verify the Session Feedback QR and direct link.
 
 Do not add clinical API credentials or patient data to Community Cloud. Any future clinical integration requires a separate institutional security, legal, privacy, regulatory, and clinical-governance review.
 

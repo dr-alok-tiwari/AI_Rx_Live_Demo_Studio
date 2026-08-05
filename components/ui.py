@@ -2,11 +2,13 @@
 
 from __future__ import annotations
 
+import base64
 from pathlib import Path
 import streamlit as st
 
 
 ROOT = Path(__file__).resolve().parents[1]
+PARTNER_LOGO = ROOT / "assets" / "branding" / "ks_publication_pathway_logo_cropped.png"
 
 
 def configure_page(title: str, icon: str = "🩺") -> None:
@@ -14,8 +16,10 @@ def configure_page(title: str, icon: str = "🩺") -> None:
         page_title=f"{title} | AI Rx Live Demo Studio",
         page_icon=icon,
         layout="wide",
-        initial_sidebar_state="expanded",
+        initial_sidebar_state="auto",
     )
+    if PARTNER_LOGO.exists():
+        st.logo(str(PARTNER_LOGO), size="large")
     inject_css()
     sidebar_brand()
 
@@ -23,6 +27,21 @@ def configure_page(title: str, icon: str = "🩺") -> None:
 def inject_css() -> None:
     css = (ROOT / "styles" / "custom.css").read_text(encoding="utf-8")
     st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
+
+
+def partner_logo(context: str = "page") -> None:
+    """Render the authorised partner logo with responsive, accessible markup."""
+
+    if not PARTNER_LOGO.exists():
+        return
+    encoded = base64.b64encode(PARTNER_LOGO.read_bytes()).decode("ascii")
+    safe_context = context if context in {"sidebar", "hero", "resource", "feedback"} else "page"
+    st.markdown(
+        f"<div class='partner-logo partner-logo--{safe_context}'>"
+        f"<img src='data:image/png;base64,{encoded}' alt='KS Publication Pathway logo'>"
+        "</div>",
+        unsafe_allow_html=True,
+    )
 
 
 def sidebar_brand() -> None:

@@ -105,6 +105,36 @@ a {
   color: #7de8d9;
 }
 
+.partner-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding: .68rem .82rem;
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 16px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, .2);
+}
+
+.partner-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.partner-logo--hero {
+  width: min(390px, 88vw);
+  margin: .4rem 0 .15rem;
+}
+
+.partner-logo--resource,
+.partner-logo--feedback {
+  width: min(420px, 88vw);
+  margin: 0 0 1.2rem;
+}
+
 .sidebar-brand {
   display: flex;
   gap: .75rem;
@@ -614,16 +644,6 @@ a {
   letter-spacing: .13em;
 }
 
-.about-identity {
-  margin-top: .8rem;
-  border-top: 3px solid var(--saffron);
-}
-
-.about-identity strong {
-  color: var(--cream);
-  font-size: 1.05rem;
-}
-
 .about-focus {
   margin-top: .9rem;
   padding-top: .8rem;
@@ -643,21 +663,9 @@ a {
 }
 
 .about-intro p,
-.about-teaching p,
-.about-connect p {
+.about-teaching p {
   color: var(--muted);
   line-height: 1.72;
-}
-
-.about-intro blockquote,
-.about-philosophy blockquote {
-  margin: 1.05rem 0 0;
-  padding: .85rem 1rem;
-  color: var(--cream);
-  font-family: "DM Serif Display", Georgia, serif;
-  font-size: 1.18rem;
-  background: rgba(245, 158, 11, .07);
-  border-left: 4px solid var(--saffron);
 }
 
 .about-chip-cloud {
@@ -668,8 +676,7 @@ a {
 }
 
 .about-education,
-.about-research,
-.about-timeline {
+.about-research {
   height: 100%;
   padding: 1.15rem 1.2rem;
   background: linear-gradient(145deg, var(--surface-2), var(--surface));
@@ -691,19 +698,16 @@ a {
 }
 
 .about-education h3,
-.about-research h3,
-.about-timeline h3 {
+.about-research h3 {
   margin: .55rem 0 .3rem;
 }
 
-.about-education p,
-.about-timeline strong {
+.about-education p {
   color: var(--cream);
 }
 
 .about-education span,
-.about-research p,
-.about-timeline p {
+.about-research p {
   color: var(--muted);
   font-size: .84rem;
   line-height: 1.55;
@@ -734,38 +738,12 @@ a {
   border-radius: 999px;
 }
 
-.about-timeline {
-  min-height: 215px;
-  margin-bottom: 1rem;
-  border-left: 4px solid var(--teal);
-}
-
-.about-year {
-  color: var(--amber);
-  font-size: .76rem;
-  font-weight: 850;
-  letter-spacing: .09em;
-}
-
-.about-teaching,
-.about-philosophy {
-  min-height: 210px;
-}
-
-.about-philosophy {
-  background: linear-gradient(150deg, rgba(15, 118, 110, .2), var(--surface));
-}
-
-.about-connect {
+.about-teaching {
   margin: 1.5rem 0 .85rem;
   padding: 1.5rem 1.65rem;
-  background: linear-gradient(125deg, rgba(180, 83, 9, .18), rgba(15, 118, 110, .17));
+  background: linear-gradient(125deg, rgba(180, 83, 9, .14), rgba(15, 118, 110, .15));
   border: 1px solid var(--line-strong);
   border-radius: 21px;
-}
-
-.about-connect h2 {
-  margin: .25rem 0 .4rem;
 }
 
 .promo-stage {
@@ -781,6 +759,33 @@ a {
   background: rgba(45, 212, 191, .07);
   border-left: 4px solid var(--teal);
   border-radius: 0 14px 14px 0;
+}
+
+.feedback-card {
+  margin: .6rem 0 1.5rem;
+  padding: 1.45rem 1.6rem;
+  background: linear-gradient(125deg, rgba(15, 118, 110, .24), rgba(180, 83, 9, .12));
+  border: 1px solid var(--line-strong);
+  border-radius: 22px;
+}
+
+.feedback-card h2 {
+  margin: .25rem 0 .45rem !important;
+}
+
+.feedback-card p {
+  max-width: 850px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.feedback-qr-label {
+  margin: 0 0 .55rem;
+  color: var(--amber);
+  font-size: .76rem;
+  font-weight: 850;
+  letter-spacing: .12em;
+  text-align: center;
 }
 
 .risk-high {

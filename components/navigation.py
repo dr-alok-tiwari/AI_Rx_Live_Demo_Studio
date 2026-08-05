@@ -15,8 +15,9 @@ PAGES = [
     ("Assessment", "pages/12_Assessment.py"),
     ("Ethics and safety", "pages/13_Ethics_and_Safety.py"),
     ("Facilitator mode", "pages/14_Facilitator_Mode.py"),
-    ("About the developer", "pages/15_About.py"),
+    ("Developer expertise", "pages/15_About.py"),
     ("Catalogue admin", "pages/16_Catalogue_Admin.py"),
     ("Decision support", "pages/17_Decision_Support.py"),
     ("Resource centre", "pages/18_Publicity_and_PPTs.py"),
+    ("Session feedback", "pages/19_Session_Feedback.py"),
 ]

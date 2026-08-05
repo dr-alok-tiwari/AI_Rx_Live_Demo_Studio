@@ -40,7 +40,7 @@ from components.prompt_sheet import render_prompt_sheet
 from components.quiz import badge_for_score, render_questions
 from components.sample_reports import attachment_ready_prompt, build_prompt_sample_pdf, prompt_pdf_filename
 from components.safety import render_safety_gate, social_media_flags
-from components.ui import configure_page, footer, metric_cards, page_header, safety_notice
+from components.ui import configure_page, footer, metric_cards, page_header, partner_logo, safety_notice
 
 
 def _finish() -> None:
@@ -61,6 +61,7 @@ def _workflow_by_category(categories: list[str], key: str) -> None:
 def render_home() -> None:
     configure_page("Home")
     tools, workflows, cases = load_tools(), load_workflows(), load_cases()
+    partner_logo("hero")
     st.markdown(
         """
         <section class="hero">
@@ -545,6 +546,7 @@ def render_decision_support() -> None:
 def render_publicity_resources() -> None:
     configure_page("Publicity and PPTs", "🎬")
     page_header("Teaching files · participant handouts · invitation assets", "Workshop resource centre", "Download the presentation decks, prompt packs, animated invitation, and audience-specific copy. Keep promotional content separate from clinical teaching material.")
+    partner_logo("resource")
     resources = load_json("resources.json")
     promo = ROOT / "assets" / "marketing" / "AI_Rx_Workshop_Promo.gif"
     if promo.exists():
@@ -557,6 +559,27 @@ def render_publicity_resources() -> None:
     st.markdown("### Copy-ready platform post")
     st.code(copy["platform_post"], language=None, wrap_lines=True)
     st.download_button("Download audience copy", "\n\n".join([copy["headline"], copy["copy"], copy["cta"], copy["platform_post"]]), f"AI_Rx_{audience.replace(' ', '_')}_Publicity.txt", "text/plain")
+    st.markdown("## Advanced AI for Doctors programme flyer")
+    st.caption("Preview and download the new KS Publication Pathway and AI Rx publicity assets. The feedback QR is intentionally kept separate from registration publicity.")
+    print_png = ROOT / "assets" / "marketing" / "AI_Rx_Advanced_AI_for_Doctors_Flyer_v2.png"
+    print_pdf = ROOT / "assets" / "marketing" / "AI_Rx_Advanced_AI_for_Doctors_Flyer_v2.pdf"
+    social_png = ROOT / "assets" / "marketing" / "AI_Rx_Advanced_AI_for_Doctors_Social_v2.png"
+    flyer_tabs = st.tabs(["A4 print flyer", "Social portrait"])
+    with flyer_tabs[0]:
+        if print_png.exists():
+            st.image(str(print_png), caption="Advanced AI for Doctors - A4 programme flyer", width="stretch")
+            downloads = st.columns(2)
+            downloads[0].download_button("Download A4 PNG", print_png.read_bytes(), print_png.name, "image/png", key="flyer_a4_png", width="stretch")
+            if print_pdf.exists():
+                downloads[1].download_button("Download print-ready PDF", print_pdf.read_bytes(), print_pdf.name, "application/pdf", key="flyer_a4_pdf", width="stretch")
+        else:
+            st.info("The A4 flyer has not been generated. Run python scripts/build_flyer.py from the project root.")
+    with flyer_tabs[1]:
+        if social_png.exists():
+            st.image(str(social_png), caption="Advanced AI for Doctors - social-media portrait", width="stretch")
+            st.download_button("Download social portrait", social_png.read_bytes(), social_png.name, "image/png", key="flyer_social_png", width="stretch")
+        else:
+            st.info("The social flyer has not been generated. Run python scripts/build_flyer.py from the project root.")
     st.markdown("## Included PowerPoint decks")
     presentation_dir = ROOT / "assets" / "presentations"
     decks = sorted(presentation_dir.glob("*.pptx")) if presentation_dir.exists() else []
@@ -572,6 +595,7 @@ def render_publicity_resources() -> None:
     st.markdown("### Consent stays literature-only")
     st.info(resources["literature_only_consent"])
     st.caption("Keep audience publicity, clinical teaching, and consent material as separate assets. Marketing copy must never imply guaranteed outcomes or autonomous diagnosis.")
+    st.page_link("pages/19_Session_Feedback.py", label="Share session feedback", icon="💬", width="stretch")
     _finish()
 
 
@@ -603,6 +627,43 @@ def render_assessment() -> None:
         key_prefix="assessment_reflection_nudge",
     )
     st.text_area("Reflection: one AI task you will change, one safeguard you will add, and one question you still have", key="assessment_reflection")
+    st.divider()
+    st.markdown("## Complete the session")
+    st.write("Use the final page to share what was useful, what needs clarification, and what should change in a future session.")
+    st.page_link("pages/19_Session_Feedback.py", label="Share session feedback", icon="💬", width="stretch")
+    _finish()
+
+
+def render_session_feedback() -> None:
+    configure_page("Session Feedback", "💬")
+    partner_logo("feedback")
+    page_header(
+        "Final workshop step",
+        "Session feedback",
+        "Your feedback helps the programme team improve the demonstrations, cases, pacing and practical resources.",
+    )
+    feedback = load_json("resources.json")["session_feedback"]
+    qr_path = ROOT / feedback["qr_path"]
+    st.markdown(
+        "<div class='feedback-card'><div class='about-kicker'>THANK YOU FOR TAKING PART</div>"
+        "<h2>Scan the QR code to share your feedback</h2>"
+        "<p>Comments on clarity, usefulness, safety, pacing and future topics are especially helpful.</p></div>",
+        unsafe_allow_html=True,
+    )
+    if qr_path.exists():
+        left, centre, right = st.columns([1, 1.2, 1])
+        with centre:
+            st.markdown("<div class='feedback-qr-label'>SESSION FEEDBACK</div>", unsafe_allow_html=True)
+            st.image(str(qr_path), caption="Session feedback QR code", width="stretch")
+            st.link_button("Open feedback form", feedback["url"], type="primary", width="stretch")
+            st.download_button("Download QR code", qr_path.read_bytes(), qr_path.name, "image/jpeg", width="stretch")
+    else:
+        st.error("The feedback QR code is unavailable. Please contact the programme team before collecting responses.")
+    st.warning(feedback["privacy_note"])
+    st.caption(
+        f"QR destination decoded from the supplied image on {feedback['qr_destination_decoded']}. "
+        "The displayed QR is the authorised source image."
+    )
     _finish()
 
 
@@ -681,28 +742,18 @@ def render_facilitator() -> None:
 
 
 def render_about() -> None:
-    configure_page("About the Developer", "👤")
+    configure_page("Developer Expertise", "👤")
     profile = load_json("resources.json")["facilitator"]
-    page_header("About the developer", profile["tagline"], profile["summary"])
-    left, right = st.columns([1, 2.15], gap="large")
-    with left:
-        st.image(profile["profile_image_url"], caption=profile["name"], width="stretch")
-        st.markdown(
-            f"<div class='developer-card about-identity'><div class='about-kicker'>CURRENT ROLE</div>"
-            f"<strong>{escape(profile['role'])}</strong><br><span class='muted'>{escape(profile['institution'])}</span>"
-            f"<div class='about-focus'>{escape(profile['focus_statement'])}</div></div>",
-            unsafe_allow_html=True,
-        )
-    with right:
-        st.markdown(
-            f"<div class='developer-card about-intro'><div class='about-kicker'>RESEARCHER · EDUCATOR · BUILDER</div>"
-            f"<h2>{escape(profile['name'])}</h2><p>{escape(profile['bio'])}</p>"
-            f"<blockquote>{escape(profile['principle'])}</blockquote></div>",
-            unsafe_allow_html=True,
-        )
-        st.markdown("### Core expertise")
-        chips = "".join(f"<span class='expertise-chip'>{escape(item)}</span> " for item in profile["expertise"])
-        st.markdown(f"<div class='about-chip-cloud'>{chips}</div>", unsafe_allow_html=True)
+    page_header("Expertise and academic foundation", "Developer expertise", profile["summary"])
+    st.markdown(
+        f"<div class='developer-card about-intro'><div class='about-kicker'>{escape(profile['tagline'])}</div>"
+        f"<h2>{escape(profile['name'])}</h2><p>{escape(profile['bio'])}</p>"
+        f"<div class='about-focus'>{escape(profile['focus_statement'])}</div></div>",
+        unsafe_allow_html=True,
+    )
+    st.markdown("### Core expertise")
+    chips = "".join(f"<span class='expertise-chip'>{escape(item)}</span> " for item in profile["expertise"])
+    st.markdown(f"<div class='about-chip-cloud'>{chips}</div>", unsafe_allow_html=True)
 
     st.markdown("## Academic foundation")
     education_columns = st.columns(3)
@@ -729,46 +780,13 @@ def render_about() -> None:
                     unsafe_allow_html=True,
                 )
 
-    st.markdown("## Academic and professional trajectory")
-    timeline_columns = st.columns(2)
-    for index, item in enumerate(profile["experience"]):
-        with timeline_columns[index % 2]:
-            st.markdown(
-                f"<div class='about-timeline'><div class='about-year'>{escape(item['period'])}</div>"
-                f"<h3>{escape(item['role'])}</h3><strong>{escape(item['organisation'])}</strong>"
-                f"<p>{escape(item['description'])}</p></div>",
-                unsafe_allow_html=True,
-            )
-
-    st.markdown("## From classroom to boardroom")
-    teaching_left, teaching_right = st.columns([1.35, 1], gap="large")
-    with teaching_left:
-        st.markdown(
-            f"<div class='developer-card about-teaching'><h3>Teaching and learning design</h3>"
-            f"<p>{escape(profile['teaching_summary'])}</p></div>",
-            unsafe_allow_html=True,
-        )
-        teaching_chips = "".join(f"<span class='expertise-chip'>{escape(item)}</span> " for item in profile["teaching_areas"])
-        st.markdown(f"<div class='about-chip-cloud'>{teaching_chips}</div>", unsafe_allow_html=True)
-    with teaching_right:
-        st.markdown(
-            f"<div class='developer-card about-philosophy'><div class='about-kicker'>TEACHING PHILOSOPHY</div>"
-            f"<blockquote>{escape(profile['teaching_philosophy'])}</blockquote></div>",
-            unsafe_allow_html=True,
-        )
-
+    st.markdown("## Teaching and learning-design expertise")
     st.markdown(
-        f"<div class='about-connect'><div><div class='about-kicker'>OPEN TO MEANINGFUL CONVERSATIONS</div>"
-        f"<h2>Research, teaching and applied AI collaboration</h2><p>{escape(profile['collaboration'])}</p>"
-        f"<strong>{escape(profile['email'])}</strong></div></div>",
+        f"<div class='developer-card about-teaching'><p>{escape(profile['teaching_summary'])}</p></div>",
         unsafe_allow_html=True,
     )
-    links = st.columns(4)
-    links[0].link_button("Portfolio", profile["portfolio_url"], width="stretch")
-    links[1].link_button("LinkedIn", profile["linkedin"], width="stretch")
-    links[2].link_button("GitHub", profile["github"], width="stretch")
-    links[3].link_button("ORCID", profile["orcid"], width="stretch")
-    st.caption(f"Profile details verified against the developer's public portfolio on {profile['profile_last_checked']}.")
+    teaching_chips = "".join(f"<span class='expertise-chip'>{escape(item)}</span> " for item in profile["teaching_areas"])
+    st.markdown(f"<div class='about-chip-cloud'>{teaching_chips}</div>", unsafe_allow_html=True)
     _finish()
 
 
