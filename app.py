@@ -30,7 +30,10 @@ pages = {
     "Faculty": [
         st.Page("pages/14_Facilitator_Mode.py", title="Facilitator mode", icon="🎙️"),
         st.Page("pages/16_Catalogue_Admin.py", title="Catalogue admin", icon="⚙️"),
-        st.Page("pages/15_About.py", title="About the developer", icon="👤"),
+        st.Page("pages/15_About.py", title="Developer expertise", icon="👤"),
+    ],
+    "Finish": [
+        st.Page("pages/19_Session_Feedback.py", title="Session feedback", icon="💬"),
     ],
 }
 

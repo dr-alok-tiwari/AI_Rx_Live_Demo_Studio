@@ -8,6 +8,7 @@ import textwrap
 import unittest
 
 from pypdf import PdfReader
+from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -144,20 +145,44 @@ class ContentTests(unittest.TestCase):
         demo_component = (ROOT / "components" / "demo_renderer.py").read_text(encoding="utf-8")
         self.assertIn("Copy complete live-demo package for ChatGPT / lab", demo_component)
 
-    def test_developer_profile_is_complete(self):
+    def test_developer_profile_contains_only_expertise_and_education(self):
         resources = json.loads((ROOT / "data" / "resources.json").read_text(encoding="utf-8"))
         profile = resources["facilitator"]
         self.assertEqual(profile["name"], "Dr. Alok Tiwari")
-        self.assertIn("Assistant Professor", profile["role"])
-        self.assertIn("Goa Institute of Management", profile["institution"])
         self.assertTrue(profile["bio"])
         self.assertGreaterEqual(len(profile["education"]), 3)
         self.assertEqual(len(profile["research_areas"]), 6)
-        self.assertEqual(len(profile["experience"]), 4)
-        self.assertIn("decision", profile["teaching_philosophy"].lower())
+        self.assertGreaterEqual(len(profile["expertise"]), 8)
+        self.assertGreaterEqual(len(profile["teaching_areas"]), 8)
         self.assertTrue(all(item.get("focus") for item in profile["education"]))
-        for key in ("portfolio_url", "linkedin", "github", "orcid"):
-            self.assertTrue(profile[key].startswith("https://"), key)
+        for key in ("role", "institution", "experience", "collaboration", "portfolio_url", "linkedin", "github", "orcid", "email"):
+            self.assertNotIn(key, profile)
+        profile_text = json.dumps(profile, ensure_ascii=False).lower()
+        for employer in ("goa institute of management", "atlas skilltech", "ugdx", "insofe"):
+            self.assertNotIn(employer, profile_text)
+
+    def test_branding_feedback_and_flyer_assets(self):
+        resources = json.loads((ROOT / "data" / "resources.json").read_text(encoding="utf-8"))
+        feedback = resources["session_feedback"]
+        self.assertEqual(feedback["url"], "https://www.canvaqr.com/RGPZ5MkJlG")
+        logo = ROOT / "assets" / "branding" / "ks_publication_pathway_logo_cropped.png"
+        qr = ROOT / feedback["qr_path"]
+        print_png = ROOT / "assets" / "marketing" / "AI_Rx_Advanced_AI_for_Doctors_Flyer_v2.png"
+        print_pdf = ROOT / "assets" / "marketing" / "AI_Rx_Advanced_AI_for_Doctors_Flyer_v2.pdf"
+        social_png = ROOT / "assets" / "marketing" / "AI_Rx_Advanced_AI_for_Doctors_Social_v2.png"
+        for asset in (logo, qr, print_png, print_pdf, social_png):
+            self.assertTrue(asset.exists(), asset)
+            self.assertGreater(asset.stat().st_size, 10_000, asset)
+        with Image.open(qr) as image:
+            self.assertEqual(image.size, (1600, 1600))
+        with Image.open(print_png) as image:
+            self.assertEqual(image.size, (2480, 3508))
+        with Image.open(social_png) as image:
+            self.assertEqual(image.size, (1080, 1350))
+        reader = PdfReader(str(print_pdf))
+        self.assertEqual(len(reader.pages), 1)
+        self.assertAlmostEqual(float(reader.pages[0].mediabox.width), 595.276, places=2)
+        self.assertAlmostEqual(float(reader.pages[0].mediabox.height), 841.89, places=2)
 
     def test_project_identifiers_are_absent(self):
         checked = [

@@ -14,8 +14,9 @@ State the operating principle at the start: patient first, doctor led, AI assist
 4. Decide whether the group will see Facilitator Mode. Set `FACILITATOR_PASSWORD` if the app will run on a shared host.
 5. Confirm the venue’s internet, projector resolution, browser zoom, audio policy, and rules for recording participants.
 6. Review the current institutional policy on AI, privacy, information security, copyright, consent, and clinical governance.
-7. Download the facilitator deck from **Publicity & PPTs** and keep the participant recap ready for sharing.
+7. Download the facilitator deck and programme flyer from **Resource centre**, and keep the participant recap ready for sharing.
 8. Print the prompt booklet, or share its HTML/text version before the practical section. Participants should not have to design prompts during the workshop.
+9. Open **Session feedback** and test the authorised QR code before participants arrive. Remind the group not to submit patient-identifiable or confidential information.
 
 ## Opening script
 
